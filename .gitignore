@@ -398,3 +398,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Ignore JetBrains .idea project files (WebStorm, IntelliJ, etc.)
+.idea/

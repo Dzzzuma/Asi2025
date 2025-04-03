@@ -141,7 +141,6 @@ nav a.active{
 }
 
 
-
 /* FOOTER */
 
 footer {
@@ -185,14 +184,23 @@ footer {
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
-        padding: 2.5 rem 3rem;
+        padding: 2.5rem 3rem;
     }
     .footer-text {
         text-align: left;
     }
+   
+}
+
+@media (max-width: 1280px){
     .menu-button{
         display: block;
     }
+    .nav-links{
+        display: none;
+    }
+    .auth-buttons{
+        display: none;
+    }
 }
-
 

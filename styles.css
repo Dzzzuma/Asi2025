@@ -1,3 +1,4 @@
+/* PAGE */
 :root{
     --background: #ffffff;
     --foreground: #0f1729;
@@ -19,6 +20,7 @@ body{
     color: var(--foreground);
 }
 
+/* HEADER*/
 
 header{
     position: sticky;
@@ -138,9 +140,59 @@ nav a.active{
     border: none;
 }
 
-@media (max-width: 768px){
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ccc; 
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.5rem 1rem;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #777;
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+/* MEDIA */
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5 rem 3rem;
+    }
+    .footer-text {
+        text-align: left;
+    }
     .menu-button{
         display: block;
     }
 }
+
 

@@ -115,11 +115,9 @@ nav a.active{
     margin-left: 0.5rem;
 }
 
-.theme-toggle{
-    font-size: 20px;
-    background: none;
+.button-theme-toogle{
+    background: none; 
     border: none;
-    cursor: pointer;
 }
 
 .auth-buttons{
@@ -262,13 +260,13 @@ footer {
     display: inline-block;
     border-radius: 9999px;
     box-shadow: 0 4px 12px rgba(59,130,246,0.3);
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .button-add-listing:hover,
 .button-search-listings:hover{
     background-color: #2563eb;
-    transform: translateY(-2px);
+    transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(59,130,246,0.4);
 }
 
@@ -278,6 +276,75 @@ footer {
     box-shadow: 0 2px 8px rgba(59,130,246,0.2);
 }
 
+/* CATEGORIES */
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.category-card{
+    background-color: #fff;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.category-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.category-icon svg{
+    width: 130px;
+    height: 130px;
+  
+}
+
+.category-title{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--foreground)
+}
+
+.category-description{
+    font-size: 0.95rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1.25rem;
+}
+
+.button-outline{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 9999px;
+    background: none;
+    color: var(--primary);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button-outline:hover{
+    background-color: var(--primary);
+    color: white;
+}
 
 @media (min-width: 768px){
     .about{

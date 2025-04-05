@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIVE&GET</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header>
@@ -38,6 +38,24 @@
             </div>
         </div>
     </header>
+
+    <div class="mobile-sidebar hidden" id="mobileSidebar">
+        <button class="close-button" id="closeSidebar">×</button>
+        <div class="sidebar-content">
+            <div class="sidebar-logo">Give&Get</div>
+            <nav class="sidebar-links">
+                <a href = "/" class="active">Strona główna</a>
+                <a href = "/listings">Przegladaj ogłoszenia</a>
+                <a href = "/listings/category/work">Praca</a>
+                <a href = "/listings/category/sales">Sprzedaż</a>
+                <a href = "/listings/category/help">Pomoc</a>
+            </nav>
+            <div class="sidebar-auth">
+                <a href="/login">Zaloguj się</a>
+                <a href="/register">Zarejestruj się</a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section class="about">
@@ -110,6 +128,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src="/js/main.js"></script>
 </body>
 </html>

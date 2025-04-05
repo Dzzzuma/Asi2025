@@ -161,11 +161,9 @@ nav a.active{
 
 footer {
     position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     border-top: 1px solid #ccc; 
-    margin-top: auto;
+    margin-top: 4rem;
 }
 
 .footer-content {
@@ -235,7 +233,7 @@ footer {
     letter-spacing: -0.025em;
 }
 
-.about-desription{
+.about-description{
     max-width: 700px;
     color: var(--muted-foreground)
 }
@@ -284,6 +282,25 @@ footer {
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+}
+
+.categories-title,
+.categories-description{
+    text-align: center;
+    width: 100%;
+}
+
+.categories-title{
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.categories-description{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--muted-foreground)
 }
 
 .category-card{
@@ -374,10 +391,10 @@ footer {
 
 .tab-list{
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 0.25rem;
     margin-top: 0.25rem;
+    text-align: center;
 }
 
 .tab{
@@ -388,10 +405,11 @@ footer {
     cursor: pointer;
     font-weight: 500;
     transition: all 0.2s ease;
-    max-width: 70%;
+    max-width: 80%;
+    min-width: 10%;
     margin: 2rem auto;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
 }
 
 .tab:hover{

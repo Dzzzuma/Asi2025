@@ -1,0 +1,501 @@
+ID,Gender,Age,Customer Type,Type of Travel,Class,Flight Distance,Departure Delay,Arrival Delay,Departure and Arrival Time Convenience,Ease of Online Booking,Check-in Service,Online Boarding,Gate Location,On-board Service,Seat Comfort,Leg Room Service,Cleanliness,Food and Drink,In-flight Service,In-flight Wifi Service,In-flight Entertainment,Baggage Handling,Satisfaction
+1,Male,48,First-time,Business,Business,821,2,5,3,3,4,3,3,3,5,2,5,5,5,3,5,5,Neutral or Dissatisfied
+2,Female,35,Returning,Business,Business,821,26,39,2,2,3,5,2,5,4,5,5,3,5,2,5,5,Satisfied
+3,Male,41,Returning,Business,Business,853,0,0,4,4,4,5,4,3,5,3,5,5,3,4,3,3,Satisfied
+4,Male,50,Returning,Business,Business,1905,0,0,2,2,3,4,2,5,5,5,4,4,5,2,5,5,Satisfied
+5,Female,49,Returning,Business,Business,3470,0,1,3,3,3,5,3,3,4,4,5,4,3,3,3,3,Satisfied
+6,Male,43,Returning,Business,Business,3788,0,0,4,4,3,5,4,4,4,4,3,3,4,4,4,4,Satisfied
+7,Male,43,Returning,Business,Business,1963,0,0,3,3,4,4,3,5,5,5,4,5,5,3,5,5,Satisfied
+8,Female,60,Returning,Business,Business,853,0,3,3,4,3,4,4,3,4,4,4,4,3,4,3,3,Satisfied
+9,Male,50,Returning,Business,Business,2607,0,0,1,1,3,2,1,4,3,4,3,3,4,4,4,4,Neutral or Dissatisfied
+10,Female,38,Returning,Business,Business,2822,13,0,2,5,3,5,2,5,4,5,4,2,5,2,5,5,Satisfied
+11,Female,28,First-time,Business,Business,821,0,5,1,1,3,1,3,2,2,5,2,2,4,1,2,3,Neutral or Dissatisfied
+12,Female,27,First-time,Business,Business,421,20,21,2,2,1,2,4,2,2,5,1,1,3,1,1,4,Neutral or Dissatisfied
+13,Male,24,First-time,Business,Economy,453,16,30,2,2,2,2,4,2,5,4,5,5,4,2,5,4,Neutral or Dissatisfied
+14,Male,9,Returning,Personal,Business,853,68,76,5,1,5,1,2,4,5,3,5,5,5,1,5,4,Neutral or Dissatisfied
+15,Male,52,Returning,Personal,Economy,853,0,0,4,2,3,2,4,3,2,3,2,2,5,2,2,5,Neutral or Dissatisfied
+16,Male,70,Returning,Personal,Economy,821,0,0,5,2,4,2,1,4,5,2,5,5,5,2,5,4,Neutral or Dissatisfied
+17,Female,48,Returning,Personal,Economy,821,0,0,3,2,5,5,3,5,1,2,2,1,5,2,5,5,Neutral or Dissatisfied
+18,Female,61,Returning,Personal,Economy,821,0,0,5,2,5,1,1,5,5,2,1,4,5,2,5,5,Neutral or Dissatisfied
+19,Female,11,Returning,Personal,Economy,853,0,0,5,3,5,3,2,3,5,2,5,5,5,3,5,4,Neutral or Dissatisfied
+20,Female,42,Returning,Personal,Economy,821,4,0,3,3,3,3,4,1,4,3,3,1,1,3,1,1,Neutral or Dissatisfied
+21,Female,14,Returning,Personal,Economy,853,12,1,1,3,4,3,3,1,4,3,4,4,3,3,4,2,Neutral or Dissatisfied
+22,Female,70,Returning,Personal,Economy,853,0,0,4,1,4,4,2,1,4,1,4,2,1,1,1,1,Neutral or Dissatisfied
+23,Female,56,Returning,Personal,Economy,821,0,0,4,3,4,4,3,5,3,3,4,3,5,4,5,5,Neutral or Dissatisfied
+24,Male,77,Returning,Business,Economy Plus,821,0,0,5,5,1,4,5,4,4,5,4,4,2,4,4,3,Neutral or Dissatisfied
+25,Male,51,Returning,Business,Business,3460,0,2,3,3,5,4,3,5,5,4,4,2,5,3,5,5,Satisfied
+26,Male,47,Returning,Business,Business,1676,0,15,4,5,5,4,4,5,5,5,5,5,5,4,5,4,Satisfied
+27,Male,50,Returning,Business,Business,2168,6,24,3,3,4,4,3,5,5,5,4,2,5,3,5,5,Satisfied
+28,Male,58,Returning,Business,Business,2867,0,0,5,0,4,5,4,3,5,3,5,5,3,0,3,3,Satisfied
+29,Male,40,Returning,Business,Business,3734,0,52,4,4,4,4,4,5,4,5,3,2,5,4,5,5,Satisfied
+30,Male,48,Returning,Business,Business,3088,0,12,4,5,3,4,4,4,4,4,3,3,4,4,4,4,Satisfied
+31,Male,35,First-time,Business,Business,212,0,0,2,2,5,2,1,4,2,5,2,2,4,2,2,5,Neutral or Dissatisfied
+32,Male,21,First-time,Business,Economy,173,0,0,0,4,3,4,4,5,3,5,3,3,4,4,3,4,Satisfied
+33,Female,33,First-time,Business,Business,173,22,28,2,2,5,2,5,3,2,3,2,2,5,2,2,5,Neutral or Dissatisfied
+34,Female,48,Returning,Business,Business,173,0,0,5,0,5,5,4,5,4,5,4,3,5,0,5,5,Satisfied
+35,Male,39,Returning,Business,Business,1672,23,17,2,2,5,4,2,3,5,4,5,5,3,2,3,5,Satisfied
+36,Female,42,Returning,Business,Business,2884,0,0,2,5,3,4,5,5,5,5,4,2,5,5,5,5,Satisfied
+37,Female,54,Returning,Business,Business,212,12,26,4,4,5,5,4,4,4,4,4,5,4,4,4,5,Satisfied
+38,Female,51,Returning,Business,Business,215,0,0,4,4,4,4,4,5,5,4,3,3,5,4,5,5,Satisfied
+39,Female,46,Returning,Business,Business,67,0,0,3,3,5,5,3,4,4,4,5,4,4,3,4,4,Satisfied
+40,Male,51,Returning,Business,Business,212,0,0,2,2,3,4,2,5,4,4,5,2,5,2,5,4,Satisfied
+41,Female,54,Returning,Business,Business,1554,59,70,2,2,3,4,2,4,4,4,5,2,4,2,4,4,Satisfied
+42,Female,45,Returning,Business,Business,108,0,0,4,4,5,5,4,4,4,4,3,3,4,4,4,5,Satisfied
+43,Female,54,Returning,Business,Business,1584,0,8,2,2,4,4,2,4,4,4,4,4,4,2,4,4,Satisfied
+44,Male,51,Returning,Business,Business,2077,0,1,1,4,5,5,4,5,5,5,4,2,5,4,5,5,Satisfied
+45,Male,56,Returning,Business,Business,173,30,14,5,0,4,5,3,4,4,3,5,2,4,0,4,3,Satisfied
+46,Female,23,First-time,Business,Economy,173,16,13,0,3,3,3,1,3,4,2,4,4,4,3,4,5,Neutral or Dissatisfied
+47,Male,24,First-time,Business,Business,108,0,0,4,0,5,4,4,4,2,2,4,4,5,0,4,5,Satisfied
+48,Female,40,First-time,Business,Business,212,29,41,3,3,2,3,3,1,4,2,5,5,2,3,5,3,Neutral or Dissatisfied
+49,Male,20,First-time,Business,Economy,108,0,29,5,4,5,4,1,5,3,4,5,5,4,4,5,5,Neutral or Dissatisfied
+50,Male,27,First-time,Business,Business,108,0,0,4,4,5,4,4,3,5,4,5,5,5,4,5,4,Satisfied
+51,Male,44,Returning,Business,Business,1859,0,0,2,4,3,5,2,5,5,5,4,5,5,2,5,5,Satisfied
+52,Female,20,First-time,Business,Economy,67,2,10,0,4,3,4,1,4,5,5,5,5,4,4,5,5,Neutral or Dissatisfied
+53,Male,37,First-time,Business,Business,212,4,1,3,3,3,3,4,4,1,2,3,3,5,2,3,5,Neutral or Dissatisfied
+54,Male,40,Returning,Business,Business,2853,0,0,3,3,5,5,3,4,4,4,5,2,4,3,4,4,Satisfied
+55,Male,36,Returning,Business,Business,3655,40,71,1,1,4,3,1,3,3,3,2,1,3,1,3,1,Neutral or Dissatisfied
+56,Female,56,Returning,Business,Business,2485,0,0,2,2,5,5,2,4,4,5,3,5,4,2,4,5,Satisfied
+57,Female,56,Returning,Business,Business,67,0,0,1,1,3,4,1,5,4,5,4,2,5,1,5,4,Satisfied
+58,Female,43,Returning,Business,Business,2199,0,0,5,0,4,4,1,5,5,5,3,4,5,0,5,5,Satisfied
+59,Female,41,Returning,Business,Business,3997,1,0,1,1,5,4,1,4,5,4,4,4,4,1,4,5,Satisfied
+60,Male,57,Returning,Business,Business,3392,19,34,1,1,3,5,1,4,5,4,5,5,4,1,4,5,Satisfied
+61,Male,42,Returning,Business,Business,3391,0,0,3,3,5,5,3,4,4,4,3,2,4,3,4,5,Satisfied
+62,Male,31,Returning,Business,Economy,173,151,186,5,5,2,2,5,4,2,3,2,2,3,2,1,4,Neutral or Dissatisfied
+63,Female,37,Returning,Business,Business,2423,0,8,4,4,1,4,4,2,4,2,4,3,2,3,2,3,Neutral or Dissatisfied
+64,Male,56,Returning,Business,Business,173,0,3,1,1,5,5,1,3,4,4,5,5,3,1,3,5,Satisfied
+65,Male,24,First-time,Business,Economy,108,0,0,0,0,3,0,1,5,5,5,5,5,5,0,5,4,Satisfied
+66,Male,36,Returning,Business,Business,173,12,8,5,5,2,3,5,3,3,3,3,4,3,1,3,1,Neutral or Dissatisfied
+67,Male,50,Returning,Business,Business,67,0,0,4,4,4,4,4,5,5,5,5,2,5,4,5,5,Satisfied
+68,Male,43,Returning,Business,Business,173,0,0,5,5,2,3,5,2,3,2,4,4,2,4,2,4,Neutral or Dissatisfied
+69,Male,52,Returning,Business,Business,212,0,67,1,3,4,3,1,1,3,1,4,4,1,3,1,3,Neutral or Dissatisfied
+70,Female,49,Returning,Business,Business,3213,68,59,3,3,1,4,3,1,4,1,3,3,1,4,1,4,Neutral or Dissatisfied
+71,Female,47,First-time,Business,Economy,173,0,14,4,1,4,1,1,5,3,5,3,3,4,1,3,1,Neutral or Dissatisfied
+72,Male,53,Returning,Business,Business,3201,7,24,2,2,3,3,2,2,3,1,1,3,2,3,2,3,Neutral or Dissatisfied
+73,Male,70,Returning,Business,Economy,173,0,0,5,5,3,5,5,3,5,2,5,5,4,5,5,1,Satisfied
+74,Female,25,First-time,Business,Economy,212,10,1,2,3,1,3,4,1,3,2,4,4,4,3,4,3,Neutral or Dissatisfied
+75,Female,23,First-time,Business,Economy,108,0,0,5,1,5,1,2,4,2,2,2,2,2,2,2,4,Neutral or Dissatisfied
+76,Male,55,First-time,Business,Economy,108,0,0,0,4,4,4,5,5,5,2,4,4,2,5,4,5,Satisfied
+77,Female,72,First-time,Business,Economy,67,324,296,3,3,2,2,4,4,2,4,2,3,2,3,3,3,Neutral or Dissatisfied
+78,Male,58,Returning,Personal,Economy,173,0,4,4,4,1,4,3,4,2,3,2,2,5,4,2,4,Satisfied
+79,Female,70,Returning,Personal,Economy,108,50,41,4,0,5,4,3,3,4,0,5,4,3,5,3,3,Satisfied
+80,Female,46,Returning,Personal,Economy,173,45,29,1,1,1,3,3,5,4,1,3,1,5,1,5,5,Neutral or Dissatisfied
+81,Female,19,Returning,Personal,Economy,215,0,0,3,2,5,2,3,5,1,2,1,1,5,2,1,2,Neutral or Dissatisfied
+82,Male,39,Returning,Personal,Economy,108,0,7,2,1,2,1,4,3,2,1,2,2,4,1,2,4,Neutral or Dissatisfied
+83,Male,58,Returning,Personal,Economy,215,254,254,2,2,4,4,4,2,4,3,4,2,3,2,3,4,Neutral or Dissatisfied
+84,Female,9,Returning,Personal,Economy,173,0,0,3,5,1,5,5,3,3,4,3,3,3,5,3,3,Satisfied
+85,Male,53,Returning,Personal,Economy,173,0,0,1,3,4,3,1,3,2,1,2,2,1,3,2,1,Neutral or Dissatisfied
+86,Female,27,Returning,Personal,Economy,212,0,13,0,3,5,3,4,3,1,4,1,1,5,3,1,5,Neutral or Dissatisfied
+87,Male,65,Returning,Personal,Economy,67,1,0,5,3,4,3,3,4,5,3,5,5,5,3,5,5,Neutral or Dissatisfied
+88,Female,52,Returning,Personal,Economy,67,2,0,5,2,5,4,1,1,4,2,4,3,1,2,1,1,Neutral or Dissatisfied
+89,Female,53,Returning,Personal,Economy,108,0,0,2,0,1,4,4,1,3,0,3,3,1,2,1,1,Neutral or Dissatisfied
+90,Male,41,Returning,Business,Business,2865,72,78,2,4,4,4,2,5,4,5,3,3,5,2,5,5,Satisfied
+91,Female,32,First-time,Business,Business,173,0,5,4,4,4,4,3,4,5,1,4,4,4,4,4,4,Neutral or Dissatisfied
+92,Female,50,Returning,Business,Business,2035,0,34,5,5,3,5,5,5,4,5,5,4,5,5,5,4,Satisfied
+93,Female,43,Returning,Business,Business,3513,101,123,2,2,2,3,2,1,3,1,1,2,1,1,1,1,Neutral or Dissatisfied
+94,Male,80,Returning,Business,Economy Plus,108,0,0,4,4,3,1,4,3,1,2,1,1,3,1,1,3,Neutral or Dissatisfied
+95,Female,7,Returning,Personal,Economy Plus,173,18,35,5,0,3,0,2,5,2,2,2,2,5,2,2,5,Neutral or Dissatisfied
+96,Female,34,Returning,Personal,Economy Plus,173,0,0,4,0,3,0,2,5,3,5,3,3,4,2,3,4,Neutral or Dissatisfied
+97,Female,18,First-time,Business,Economy Plus,215,0,0,5,3,2,3,3,1,1,4,1,1,5,3,1,1,Neutral or Dissatisfied
+98,Male,44,Returning,Business,Business,562,0,11,4,4,3,4,4,4,5,4,5,3,4,4,4,4,Satisfied
+99,Female,52,Returning,Business,Business,562,27,18,5,5,4,4,5,4,5,4,3,3,4,5,4,4,Satisfied
+100,Female,23,First-time,Business,Economy,562,27,36,4,0,4,0,4,4,5,2,5,5,5,0,5,5,Satisfied
+101,Male,44,Returning,Business,Business,2992,0,0,1,1,3,4,1,4,4,4,3,5,4,1,4,4,Satisfied
+102,Female,51,Returning,Business,Business,1970,0,0,3,3,4,4,3,4,4,5,4,2,4,3,4,4,Satisfied
+103,Male,44,Returning,Business,Business,1964,0,0,1,1,3,4,1,4,5,4,5,4,4,1,4,4,Satisfied
+104,Male,42,Returning,Business,Business,3227,0,0,3,1,3,4,3,4,4,4,5,3,4,3,4,4,Satisfied
+105,Female,55,Returning,Business,Business,2639,0,0,1,1,5,5,1,5,5,5,4,4,5,1,5,5,Satisfied
+106,Male,24,First-time,Business,Business,562,96,95,0,4,3,4,2,5,4,4,5,5,4,4,5,5,Satisfied
+107,Male,47,Returning,Business,Business,3477,0,27,4,4,5,4,4,5,5,5,3,2,5,4,5,5,Satisfied
+108,Male,43,Returning,Business,Business,562,45,51,3,3,2,4,3,4,3,4,1,1,4,4,4,4,Neutral or Dissatisfied
+109,Female,72,Returning,Business,Business,1954,60,145,1,3,1,1,1,5,1,3,1,1,4,1,4,2,Neutral or Dissatisfied
+110,Female,27,First-time,Business,Business,562,0,0,5,5,5,5,3,4,2,5,2,2,5,5,2,4,Satisfied
+111,Female,39,Returning,Business,Business,2046,104,122,2,2,5,5,2,4,5,5,3,3,4,2,4,4,Satisfied
+112,Female,11,First-time,Business,Economy,562,1,2,0,4,1,4,3,3,2,2,2,2,3,4,2,4,Neutral or Dissatisfied
+113,Male,54,Returning,Business,Business,3389,32,40,2,5,3,4,2,4,4,4,3,2,4,4,4,4,Neutral or Dissatisfied
+114,Female,51,Returning,Business,Business,562,0,15,3,3,4,4,3,2,4,3,3,1,2,2,2,2,Neutral or Dissatisfied
+115,Female,12,First-time,Business,Business,562,11,25,2,3,3,3,3,3,2,4,2,2,3,3,2,3,Neutral or Dissatisfied
+116,Female,26,First-time,Business,Business,562,0,8,2,2,1,2,3,1,4,1,3,3,3,2,3,3,Neutral or Dissatisfied
+117,Male,39,Returning,Business,Business,1553,0,0,4,4,5,3,4,5,3,5,5,1,5,4,5,4,Satisfied
+118,Male,32,Returning,Business,Business,562,183,192,5,5,4,4,5,4,4,2,4,4,3,5,4,2,Satisfied
+119,Female,37,Returning,Business,Economy,162,0,21,1,1,3,2,1,3,2,4,2,2,3,2,2,3,Neutral or Dissatisfied
+120,Male,40,Returning,Business,Business,3043,38,29,2,2,1,4,2,1,4,1,2,3,1,4,1,4,Neutral or Dissatisfied
+121,Female,38,Returning,Personal,Economy,562,0,6,1,2,1,2,2,3,4,3,5,5,3,2,5,2,Neutral or Dissatisfied
+122,Male,17,Returning,Personal,Economy,562,3,6,4,4,3,4,3,4,3,2,4,4,4,4,4,5,Neutral or Dissatisfied
+123,Female,33,Returning,Personal,Economy,562,30,41,3,1,1,1,4,2,4,5,4,4,3,1,4,3,Neutral or Dissatisfied
+124,Female,7,Returning,Personal,Economy,562,0,2,5,1,4,1,2,5,5,2,2,2,5,1,2,5,Neutral or Dissatisfied
+125,Male,21,Returning,Personal,Economy,562,103,117,5,3,4,3,3,4,5,3,5,5,5,3,5,1,Neutral or Dissatisfied
+126,Male,66,Returning,Personal,Economy,562,88,84,5,2,5,2,4,3,5,5,5,5,5,2,5,2,Neutral or Dissatisfied
+127,Female,68,Returning,Personal,Economy,562,42,37,1,2,1,3,3,3,3,2,4,4,3,2,3,3,Neutral or Dissatisfied
+128,Male,65,Returning,Personal,Economy,562,7,15,1,2,1,2,4,1,4,1,4,4,3,2,4,4,Neutral or Dissatisfied
+129,Male,67,Returning,Personal,Economy,562,0,0,2,4,1,4,4,4,2,3,2,2,3,4,2,4,Neutral or Dissatisfied
+130,Female,39,Returning,Business,Business,1868,54,49,1,1,3,5,1,4,4,4,4,4,4,1,4,4,Satisfied
+131,Female,28,First-time,Business,Business,562,115,116,3,3,1,3,4,1,5,4,5,5,3,3,5,3,Neutral or Dissatisfied
+132,Male,59,First-time,Business,Business,227,11,5,2,2,4,2,3,4,2,3,2,2,5,2,2,4,Neutral or Dissatisfied
+133,Female,26,First-time,Business,Business,227,38,44,3,3,2,3,3,2,4,1,3,3,3,3,3,3,Neutral or Dissatisfied
+134,Female,33,Returning,Business,Business,227,56,57,1,1,4,4,1,5,5,5,5,5,5,1,5,5,Satisfied
+135,Male,56,First-time,Business,Business,227,0,0,3,3,5,3,1,4,3,3,2,2,5,3,2,4,Neutral or Dissatisfied
+136,Female,43,Returning,Business,Business,2029,4,15,2,2,4,5,2,4,4,4,4,2,4,2,4,4,Satisfied
+137,Female,45,Returning,Business,Business,227,0,16,5,5,4,4,5,4,4,4,4,4,4,5,4,4,Satisfied
+138,Male,45,Returning,Business,Business,2374,0,0,2,2,3,5,2,4,4,4,5,2,4,2,4,4,Satisfied
+139,Female,69,Returning,Business,Business,3261,3,3,5,5,2,4,5,3,3,3,1,4,3,3,3,3,Neutral or Dissatisfied
+140,Male,31,Returning,Business,Business,3538,0,5,4,4,4,4,4,4,4,5,4,4,5,4,4,4,Satisfied
+141,Female,55,Returning,Business,Business,227,7,1,4,4,3,4,4,4,4,4,4,3,4,4,4,4,Satisfied
+142,Male,58,Returning,Business,Business,227,0,0,2,4,4,5,2,4,5,4,4,3,4,2,4,4,Satisfied
+143,Female,39,Returning,Business,Business,227,0,18,0,0,4,5,5,2,4,2,4,2,2,0,2,2,Satisfied
+144,Female,41,Returning,Business,Business,3002,0,0,0,0,4,4,2,1,5,1,5,5,1,0,1,1,Satisfied
+145,Male,16,Returning,Business,Business,227,265,260,1,1,4,4,1,2,4,4,4,3,3,4,4,4,Neutral or Dissatisfied
+146,Male,60,Returning,Business,Business,2371,66,61,4,4,3,4,4,4,5,4,3,2,4,4,4,4,Satisfied
+147,Female,47,Returning,Business,Business,1946,117,136,1,1,2,2,1,1,2,4,2,2,2,2,4,4,Neutral or Dissatisfied
+148,Female,54,Returning,Business,Business,227,58,62,3,3,3,3,3,2,3,2,3,2,2,2,2,2,Neutral or Dissatisfied
+149,Male,37,Returning,Business,Business,3758,41,50,3,3,3,3,3,2,2,2,1,4,2,2,2,2,Neutral or Dissatisfied
+150,Male,21,First-time,Business,Economy,227,166,185,1,2,3,3,3,3,3,4,3,2,2,2,4,4,Neutral or Dissatisfied
+151,Male,36,Returning,Business,Business,1534,11,19,1,5,4,5,5,5,5,5,5,2,5,5,5,5,Satisfied
+152,Female,51,Returning,Business,Business,3424,44,42,4,4,4,3,4,3,3,3,4,5,3,3,3,3,Neutral or Dissatisfied
+153,Female,35,Returning,Business,Business,227,0,10,3,3,4,4,3,5,4,5,3,5,5,3,5,5,Satisfied
+154,Female,41,Returning,Business,Business,2731,0,0,4,4,3,4,4,5,5,5,5,4,5,4,5,5,Satisfied
+155,Female,17,First-time,Business,Business,227,0,11,3,4,4,4,3,1,5,2,5,5,4,4,5,4,Neutral or Dissatisfied
+156,Female,49,First-time,Business,Business,227,4,9,2,2,2,2,3,1,5,5,3,3,3,2,3,4,Neutral or Dissatisfied
+157,Male,60,Returning,Business,Business,3415,0,0,3,3,3,3,3,1,4,2,1,1,1,1,1,1,Neutral or Dissatisfied
+158,Male,22,First-time,Business,Economy,227,0,0,4,1,3,1,3,3,2,2,2,2,4,1,2,3,Neutral or Dissatisfied
+159,Female,46,Returning,Business,Business,227,0,0,4,4,4,3,4,5,5,5,1,5,5,4,5,5,Satisfied
+160,Female,42,Returning,Personal,Economy,227,55,59,4,2,5,4,2,4,5,2,4,4,4,2,4,3,Neutral or Dissatisfied
+161,Male,20,Returning,Personal,Economy,227,49,63,5,2,4,2,5,3,5,2,5,5,4,2,5,5,Neutral or Dissatisfied
+162,Male,14,Returning,Personal,Economy,227,0,0,5,0,3,0,1,1,5,2,5,5,4,3,5,5,Neutral or Dissatisfied
+163,Female,64,Returning,Personal,Economy,227,6,0,4,2,3,5,3,2,4,2,3,5,2,2,2,2,Neutral or Dissatisfied
+164,Male,12,Returning,Personal,Economy,227,134,133,4,4,4,4,1,5,4,4,4,4,5,4,5,4,Neutral or Dissatisfied
+165,Male,29,Returning,Personal,Economy,227,52,56,5,0,3,0,3,4,2,5,2,2,5,2,2,5,Neutral or Dissatisfied
+166,Female,44,Returning,Personal,Economy,227,31,25,3,0,3,4,1,4,2,0,3,2,4,2,4,4,Neutral or Dissatisfied
+167,Female,66,Returning,Personal,Economy,227,0,0,5,0,3,5,3,5,5,0,4,5,5,3,5,1,Neutral or Dissatisfied
+168,Male,37,Returning,Personal,Economy,227,36,43,5,3,3,3,4,3,4,2,4,4,5,3,4,5,Neutral or Dissatisfied
+169,Male,35,Returning,Personal,Economy,227,0,10,3,2,3,2,3,4,4,4,4,4,3,2,4,1,Neutral or Dissatisfied
+170,Female,36,Returning,Personal,Economy,227,0,0,5,3,3,3,2,4,2,4,2,2,5,3,2,5,Neutral or Dissatisfied
+171,Female,49,Returning,Business,Business,1798,15,12,4,4,3,4,4,5,5,5,3,5,5,4,5,5,Satisfied
+172,Male,37,Returning,Business,Business,227,0,0,3,3,5,5,3,5,5,4,4,5,5,3,5,5,Satisfied
+173,Female,57,Returning,Business,Business,227,10,10,1,1,4,5,1,5,4,5,4,2,5,1,5,5,Satisfied
+174,Female,39,Returning,Business,Business,3822,6,9,4,3,4,3,4,3,4,3,2,1,3,3,3,3,Neutral or Dissatisfied
+175,Male,36,First-time,Business,Business,227,0,0,2,2,5,2,3,3,5,4,5,5,4,2,5,4,Neutral or Dissatisfied
+176,Female,56,Returning,Personal,Economy Plus,227,0,17,3,2,1,3,1,4,5,2,4,4,4,2,4,4,Neutral or Dissatisfied
+177,Female,10,Returning,Personal,Economy Plus,227,39,56,4,1,3,1,2,4,1,4,1,1,5,1,1,4,Neutral or Dissatisfied
+178,Male,28,Returning,Personal,Economy Plus,227,0,0,1,2,3,2,4,3,4,3,4,4,4,2,4,4,Neutral or Dissatisfied
+179,Female,36,Returning,Business,Business,213,0,0,4,0,5,4,3,1,4,1,5,3,1,0,1,1,Satisfied
+180,Male,56,Returning,Business,Business,2975,0,13,5,0,3,5,2,5,5,5,5,5,5,0,5,5,Satisfied
+181,Female,56,Returning,Business,Business,213,0,0,4,4,3,5,4,5,4,5,3,3,5,4,5,5,Satisfied
+182,Male,44,Returning,Business,Business,2569,0,0,4,4,3,4,4,4,4,4,3,2,4,4,4,5,Satisfied
+183,Male,26,First-time,Business,Business,213,0,0,0,3,4,3,3,5,2,5,2,2,5,3,2,4,Neutral or Dissatisfied
+184,Male,44,Returning,Business,Business,2497,0,0,4,0,3,5,2,1,4,1,5,4,1,0,1,1,Satisfied
+185,Male,49,Returning,Business,Business,213,19,29,1,1,1,3,1,3,3,2,1,4,3,2,3,2,Neutral or Dissatisfied
+186,Male,42,Returning,Business,Business,3880,0,0,1,1,3,4,1,3,4,4,3,3,3,1,3,5,Satisfied
+187,Male,36,First-time,Business,Business,213,0,0,3,3,5,3,3,3,5,2,5,5,4,3,5,4,Neutral or Dissatisfied
+188,Male,20,First-time,Business,Business,213,0,0,2,4,5,4,1,4,5,4,5,5,5,4,5,5,Satisfied
+189,Female,42,Returning,Business,Business,2888,0,0,0,0,5,4,2,3,5,3,4,5,3,0,3,3,Satisfied
+190,Male,44,Returning,Business,Business,290,0,0,2,2,4,4,2,5,4,5,3,4,5,2,5,5,Satisfied
+191,Male,35,First-time,Business,Business,213,41,29,2,2,4,2,4,4,2,4,2,2,4,2,2,3,Neutral or Dissatisfied
+192,Male,52,Returning,Business,Business,2129,95,85,2,3,2,4,2,2,4,2,3,5,2,2,2,2,Neutral or Dissatisfied
+193,Female,50,Returning,Business,Business,213,0,0,1,1,4,4,1,5,4,5,3,5,5,1,5,5,Satisfied
+194,Female,46,Returning,Business,Business,3556,128,117,2,2,3,4,2,5,4,5,3,3,5,2,5,5,Satisfied
+195,Male,36,Returning,Business,Business,3098,0,0,4,0,5,4,1,2,5,2,4,5,2,0,2,2,Satisfied
+196,Male,23,First-time,Business,Economy,213,21,31,5,5,3,5,4,3,1,5,1,1,4,5,1,4,Satisfied
+197,Male,56,Returning,Business,Business,2136,0,0,2,4,5,4,4,5,5,5,3,5,5,4,5,5,Satisfied
+198,Male,57,First-time,Business,Business,213,0,0,4,4,4,4,5,5,3,3,3,3,5,4,3,4,Satisfied
+199,Female,60,Returning,Business,Business,3756,36,24,4,4,5,4,4,4,5,4,5,2,4,4,4,4,Satisfied
+200,Female,43,Returning,Business,Business,3175,54,55,3,3,3,3,3,1,4,1,1,5,1,1,1,1,Neutral or Dissatisfied
+201,Female,43,Returning,Business,Business,213,65,85,5,5,2,4,5,2,3,2,3,5,2,1,2,1,Neutral or Dissatisfied
+202,Male,38,First-time,Business,Business,213,17,4,3,3,4,3,3,5,5,4,5,5,4,3,5,5,Neutral or Dissatisfied
+203,Female,27,First-time,Business,Business,290,0,0,3,3,4,3,4,4,5,5,5,5,4,3,5,3,Neutral or Dissatisfied
+204,Female,71,Returning,Business,Business,2376,9,8,3,3,1,3,3,4,3,4,1,2,4,2,4,2,Neutral or Dissatisfied
+205,Male,59,Returning,Business,Business,1828,21,19,5,5,3,3,5,4,3,3,2,5,4,4,4,4,Neutral or Dissatisfied
+206,Male,53,Returning,Business,Business,3728,0,0,4,4,2,4,4,3,3,3,1,4,3,3,3,3,Neutral or Dissatisfied
+207,Female,40,Returning,Business,Business,213,0,0,5,0,3,4,5,4,5,1,3,5,4,0,4,1,Satisfied
+208,Female,49,First-time,Business,Business,213,20,21,2,2,3,2,4,4,5,4,5,5,4,2,5,4,Neutral or Dissatisfied
+209,Female,69,Returning,Business,Business,290,0,0,2,3,5,4,2,4,2,4,5,1,4,2,4,4,Satisfied
+210,Female,27,First-time,Business,Economy,213,6,4,2,4,4,4,1,2,2,1,2,2,1,4,2,1,Neutral or Dissatisfied
+211,Male,22,First-time,Business,Economy,213,1,4,0,5,1,5,1,4,3,4,3,3,3,5,3,5,Satisfied
+212,Female,30,Returning,Business,Business,213,25,13,5,5,1,4,5,1,2,2,5,5,4,2,5,3,Neutral or Dissatisfied
+213,Male,16,Returning,Business,Business,213,0,0,5,3,1,2,5,1,3,5,2,2,3,3,2,4,Neutral or Dissatisfied
+214,Male,38,First-time,Business,Business,213,0,0,2,2,1,2,3,1,5,3,3,3,4,2,3,3,Neutral or Dissatisfied
+215,Male,34,Returning,Personal,Economy,213,0,0,4,3,3,3,3,1,4,3,4,4,4,3,4,3,Neutral or Dissatisfied
+216,Female,35,Returning,Personal,Economy,213,0,2,3,0,3,0,4,4,3,3,3,3,4,0,3,4,Satisfied
+217,Male,48,Returning,Personal,Economy,290,0,0,5,2,4,2,1,4,5,3,5,5,4,2,5,4,Neutral or Dissatisfied
+218,Male,17,Returning,Personal,Economy,213,0,3,4,4,4,4,3,3,2,3,3,3,4,4,3,2,Neutral or Dissatisfied
+219,Male,31,Returning,Personal,Economy,290,0,0,5,5,4,5,3,4,2,5,2,2,4,4,2,4,Neutral or Dissatisfied
+220,Male,31,Returning,Personal,Economy,290,25,42,4,3,5,3,3,1,3,4,3,3,4,3,3,4,Neutral or Dissatisfied
+221,Female,36,Returning,Personal,Economy,213,0,0,0,2,5,2,2,4,3,2,3,3,5,2,3,5,Neutral or Dissatisfied
+222,Female,44,Returning,Personal,Economy,213,0,5,5,4,4,4,1,1,1,4,1,1,1,4,1,1,Neutral or Dissatisfied
+223,Female,16,Returning,Personal,Economy,213,192,293,5,1,5,5,1,5,5,4,5,1,3,1,4,4,Neutral or Dissatisfied
+224,Male,35,Returning,Personal,Economy,290,0,24,4,3,4,3,1,4,2,3,2,2,5,3,2,4,Neutral or Dissatisfied
+225,Male,29,Returning,Personal,Economy,290,0,0,5,4,3,4,2,4,3,3,3,3,2,4,3,4,Neutral or Dissatisfied
+226,Male,66,Returning,Personal,Economy,290,0,0,5,3,5,3,4,4,2,3,2,2,4,3,2,4,Neutral or Dissatisfied
+227,Female,56,Returning,Personal,Economy,213,20,8,0,0,3,4,3,5,5,0,5,4,5,3,5,5,Neutral or Dissatisfied
+228,Female,17,Returning,Personal,Economy,213,0,0,4,3,3,3,4,3,4,3,4,4,4,3,4,4,Neutral or Dissatisfied
+229,Female,33,Returning,Business,Business,213,0,0,5,5,5,5,5,5,5,5,3,4,5,5,5,4,Satisfied
+230,Female,44,First-time,Business,Business,213,6,40,2,2,5,2,5,3,2,4,2,2,4,2,2,4,Neutral or Dissatisfied
+231,Female,47,Returning,Business,Business,1957,14,10,1,1,3,5,1,4,4,4,3,5,4,1,4,5,Satisfied
+232,Female,57,Returning,Business,Business,213,0,0,4,4,5,5,4,5,4,5,5,4,5,4,5,5,Satisfied
+233,Female,38,First-time,Business,Business,213,0,0,4,4,1,4,4,2,1,3,1,1,4,3,1,3,Neutral or Dissatisfied
+234,Male,47,Returning,Business,Economy Plus,213,0,0,4,4,4,3,4,1,3,4,3,3,3,3,3,5,Satisfied
+235,Female,16,Returning,Personal,Economy Plus,213,0,0,2,5,4,5,3,5,2,4,2,2,5,5,2,4,Satisfied
+236,Male,35,Returning,Business,Business,3242,0,4,4,4,1,2,4,2,2,2,4,1,2,2,2,2,Neutral or Dissatisfied
+237,Male,7,Returning,Personal,Business,719,0,2,5,3,3,3,2,3,2,4,2,2,5,3,2,5,Neutral or Dissatisfied
+238,Female,39,Returning,Business,Business,719,82,89,2,3,3,5,2,5,5,5,3,3,5,2,5,5,Satisfied
+239,Male,44,Returning,Business,Business,719,2,11,3,3,5,5,3,4,5,4,3,3,4,3,4,4,Satisfied
+240,Female,49,Returning,Business,Business,3477,7,26,5,5,3,5,5,5,5,5,5,2,5,5,5,5,Satisfied
+241,Male,22,Returning,Business,Business,2689,10,27,2,2,4,5,2,4,5,3,5,5,5,2,5,5,Satisfied
+242,Male,38,First-time,Business,Business,719,0,0,4,4,4,4,5,5,1,5,1,1,4,4,1,4,Neutral or Dissatisfied
+243,Male,22,First-time,Business,Economy,719,14,25,1,1,1,1,3,4,1,3,1,1,4,1,1,3,Neutral or Dissatisfied
+244,Male,30,First-time,Business,Business,719,45,41,2,2,1,2,3,2,3,2,3,3,2,2,3,2,Neutral or Dissatisfied
+245,Female,29,Returning,Business,Business,2903,17,25,2,2,4,3,2,3,3,5,3,3,3,3,3,3,Neutral or Dissatisfied
+246,Male,50,Returning,Business,Business,719,116,140,2,2,3,3,2,2,3,4,3,3,4,3,3,3,Neutral or Dissatisfied
+247,Male,11,Returning,Business,Business,719,38,,1,1,4,4,1,4,4,3,4,4,3,4,4,4,Neutral or Dissatisfied
+248,Male,23,Returning,Business,Business,719,35,42,4,4,2,3,4,2,3,2,3,3,3,3,3,4,Neutral or Dissatisfied
+249,Male,20,First-time,Business,Economy,319,0,0,0,2,2,2,2,1,5,5,5,5,3,2,5,5,Neutral or Dissatisfied
+250,Female,70,Returning,Personal,Economy,719,0,0,4,3,5,5,4,1,4,3,5,5,1,3,1,1,Neutral or Dissatisfied
+251,Male,66,First-time,Personal,Economy,719,193,205,2,3,2,2,2,3,2,2,2,3,1,3,3,3,Neutral or Dissatisfied
+252,Female,50,Returning,Personal,Economy Plus,719,20,22,1,2,4,4,4,2,3,2,2,3,2,1,2,2,Neutral or Dissatisfied
+253,Male,39,Returning,Personal,Economy Plus,719,51,79,5,2,3,2,2,4,2,5,2,2,5,2,2,4,Neutral or Dissatisfied
+254,Male,18,Returning,Personal,Economy Plus,719,80,76,4,1,3,1,2,5,1,5,2,2,4,1,2,5,Neutral or Dissatisfied
+255,Male,26,Returning,Business,Business,3800,158,213,4,4,3,3,4,5,3,5,3,3,4,4,3,5,Satisfied
+256,Male,22,First-time,Business,Business,612,92,99,4,5,3,5,1,5,2,3,2,2,5,5,2,5,Satisfied
+257,Male,58,Returning,Business,Business,612,1,0,2,2,3,4,2,5,4,5,5,3,5,2,5,5,Satisfied
+258,Male,48,Returning,Business,Business,1708,4,0,4,4,3,4,4,4,5,4,5,4,4,4,4,4,Satisfied
+259,Female,55,Returning,Business,Business,612,14,19,3,3,3,4,3,4,3,4,2,5,4,4,4,4,Neutral or Dissatisfied
+260,Male,62,Returning,Business,Business,612,29,22,5,5,2,4,5,2,3,2,2,2,2,2,2,2,Neutral or Dissatisfied
+261,Female,61,Returning,Personal,Economy,612,6,6,4,3,3,1,4,2,2,3,4,1,2,2,2,2,Neutral or Dissatisfied
+262,Male,63,Returning,Personal,Business,802,0,6,4,2,5,4,1,4,4,2,4,2,4,2,4,5,Neutral or Dissatisfied
+263,Male,43,Returning,Personal,Business,802,0,0,2,1,3,3,3,2,3,1,1,2,2,1,2,2,Neutral or Dissatisfied
+264,Female,43,Returning,Business,Business,3967,1,0,5,5,3,4,5,5,4,5,3,3,5,5,5,5,Satisfied
+265,Female,49,Returning,Business,Business,825,0,0,3,4,4,4,3,4,5,4,4,5,4,3,4,4,Satisfied
+266,Male,44,Returning,Business,Business,2770,0,0,2,3,3,5,2,3,4,4,3,4,3,2,3,3,Satisfied
+267,Female,40,Returning,Business,Business,2026,0,0,1,1,3,4,1,4,5,5,3,3,4,1,4,4,Satisfied
+268,Male,20,First-time,Business,Economy,802,35,18,3,3,2,3,4,2,3,1,3,3,4,3,3,3,Neutral or Dissatisfied
+269,Female,55,Returning,Business,Business,802,165,167,5,5,4,4,5,5,4,5,4,5,4,5,5,5,Satisfied
+270,Female,59,Returning,Business,Business,802,0,14,2,2,5,5,2,4,5,4,4,2,4,2,4,4,Satisfied
+271,Male,35,First-time,Business,Business,802,0,2,1,1,3,1,3,4,4,2,4,4,4,2,4,3,Neutral or Dissatisfied
+272,Male,43,Returning,Business,Business,802,0,0,1,1,3,2,1,3,2,2,3,2,3,3,3,3,Neutral or Dissatisfied
+273,Male,53,Returning,Business,Business,3357,0,0,2,2,3,3,2,2,3,2,1,5,2,2,2,2,Neutral or Dissatisfied
+274,Female,27,First-time,Business,Business,802,0,0,3,3,3,3,4,3,1,3,1,1,3,4,1,3,Neutral or Dissatisfied
+275,Female,29,Returning,Business,Business,3044,0,0,5,3,3,5,3,3,4,4,4,4,4,3,4,5,Satisfied
+276,Female,43,First-time,Business,Economy,402,0,0,0,3,5,3,1,4,2,1,2,2,2,2,2,4,Neutral or Dissatisfied
+277,Male,40,Returning,Business,Business,402,0,0,3,3,2,3,3,5,3,5,5,5,5,3,5,5,Satisfied
+278,Female,16,Returning,Personal,Economy,802,0,0,5,1,4,1,4,3,4,2,4,4,1,2,4,3,Neutral or Dissatisfied
+279,Female,23,Returning,Personal,Economy,825,0,0,3,3,3,3,4,4,1,1,1,1,4,3,1,4,Neutral or Dissatisfied
+280,Male,44,Returning,Personal,Economy,825,0,0,5,4,4,4,3,4,3,5,3,3,4,4,3,5,Satisfied
+281,Male,51,Returning,Personal,Economy,825,0,0,4,3,4,3,1,3,5,3,5,5,5,3,5,5,Neutral or Dissatisfied
+282,Male,25,Returning,Personal,Economy,825,0,0,5,4,5,4,4,3,4,3,4,4,5,4,4,5,Satisfied
+283,Male,40,First-time,Business,Business,802,11,4,4,4,4,4,1,3,2,2,2,2,5,4,2,4,Satisfied
+284,Female,17,First-time,Business,Economy,802,0,0,4,4,4,4,5,4,4,5,4,4,5,4,4,5,Satisfied
+285,Female,45,Returning,Business,Business,825,2,0,1,5,1,4,5,1,4,1,2,3,1,1,1,1,Neutral or Dissatisfied
+286,Female,41,Returning,Business,Business,802,0,0,4,3,4,4,3,5,5,4,4,2,5,3,5,5,Satisfied
+287,Male,55,Returning,Business,Business,3433,0,0,5,5,4,4,5,5,5,4,4,5,5,5,5,5,Satisfied
+288,Female,42,Returning,Personal,Economy Plus,802,74,74,3,2,4,5,1,5,1,2,4,3,5,3,5,5,Neutral or Dissatisfied
+289,Male,51,Returning,Personal,Economy Plus,825,0,0,5,3,5,3,5,3,4,3,4,4,5,2,4,4,Neutral or Dissatisfied
+290,Male,39,First-time,Business,Business,1250,0,0,1,1,4,1,2,4,1,5,1,1,4,1,1,4,Neutral or Dissatisfied
+291,Male,54,Returning,Business,Business,2718,0,0,1,3,5,4,1,4,5,4,5,3,4,1,4,4,Satisfied
+292,Female,21,First-time,Business,Economy,1250,14,0,3,3,3,3,3,5,1,2,1,1,5,4,1,4,Satisfied
+293,Male,52,Returning,Business,Business,1517,43,17,4,4,1,3,4,2,3,1,2,5,2,2,2,2,Neutral or Dissatisfied
+294,Male,17,Returning,Personal,Economy,1250,11,12,2,3,3,3,3,2,1,3,1,1,4,3,1,3,Neutral or Dissatisfied
+295,Female,54,Returning,Personal,Economy,1250,123,120,1,4,3,2,2,4,2,4,3,3,4,4,4,4,Neutral or Dissatisfied
+296,Female,47,Returning,Business,Business,2262,0,8,4,4,2,4,4,3,3,3,3,5,3,3,3,3,Neutral or Dissatisfied
+297,Female,55,Returning,Business,Business,590,62,67,1,1,3,5,1,4,4,4,5,3,4,1,4,4,Satisfied
+298,Male,52,First-time,Business,Business,590,5,0,3,3,3,3,5,4,5,3,5,5,4,3,5,4,Neutral or Dissatisfied
+299,Male,41,Returning,Business,Business,590,45,50,2,2,5,5,2,5,4,5,3,3,5,2,5,5,Satisfied
+300,Female,24,First-time,Business,Business,590,0,0,1,4,4,4,4,3,3,2,3,3,5,4,3,4,Satisfied
+301,Male,40,Returning,Business,Business,821,18,19,2,2,5,5,2,3,4,2,4,5,3,2,3,3,Satisfied
+302,Male,52,Returning,Business,Business,821,18,18,5,4,3,5,5,5,5,5,4,5,5,5,5,5,Satisfied
+303,Male,51,Returning,Business,Business,3183,13,11,2,2,5,5,2,5,5,5,5,3,5,2,5,5,Satisfied
+304,Female,43,Returning,Business,Business,1895,0,0,2,2,4,3,2,1,4,1,2,1,1,1,1,1,Neutral or Dissatisfied
+305,Male,56,Returning,Business,Business,2204,55,49,1,1,5,4,1,4,5,4,4,4,4,1,4,4,Satisfied
+306,Male,26,First-time,Business,Business,821,0,0,5,5,4,4,3,3,3,4,3,3,5,5,3,5,Satisfied
+307,Female,31,Returning,Business,Business,2146,0,15,5,5,3,4,5,5,5,5,5,5,4,5,5,4,Satisfied
+308,Female,56,Returning,Business,Business,853,0,0,3,1,4,5,3,4,5,4,3,4,4,3,4,4,Satisfied
+309,Male,53,Returning,Business,Business,853,0,0,2,2,5,4,2,4,5,4,4,4,4,2,4,4,Satisfied
+310,Female,60,Returning,Business,Business,2180,0,12,1,1,5,4,1,3,4,3,4,5,3,1,3,3,Satisfied
+311,Male,26,First-time,Business,Business,821,10,5,2,2,5,2,3,4,4,5,4,4,4,2,4,4,Neutral or Dissatisfied
+312,Male,22,Returning,Business,Business,3206,41,133,2,2,5,5,2,2,5,5,5,5,4,2,4,4,Satisfied
+313,Male,30,First-time,Business,Business,821,25,36,4,4,4,4,1,5,4,4,3,3,4,4,3,5,Neutral or Dissatisfied
+314,Female,59,Returning,Business,Business,2160,0,9,2,2,3,4,2,4,4,4,5,2,4,2,4,4,Satisfied
+315,Female,25,Returning,Business,Business,3380,2,3,1,1,4,5,1,3,5,4,5,5,5,1,5,5,Satisfied
+316,Female,44,Returning,Business,Business,821,0,0,1,1,3,4,1,5,4,5,3,2,5,1,5,5,Satisfied
+317,Female,25,First-time,Business,Business,821,0,0,5,5,4,5,3,3,5,3,5,5,5,5,5,5,Satisfied
+318,Female,29,First-time,Business,Business,853,0,10,2,2,3,2,3,2,1,5,1,1,3,2,1,3,Neutral or Dissatisfied
+319,Female,60,Returning,Business,Business,821,2,0,1,3,1,3,1,2,4,2,3,1,2,2,2,2,Neutral or Dissatisfied
+320,Female,21,First-time,Business,Business,853,0,0,1,3,1,3,3,2,3,4,3,3,3,2,3,3,Neutral or Dissatisfied
+321,Male,42,Returning,Business,Business,3109,0,8,1,1,1,3,1,2,4,2,3,2,2,2,2,2,Neutral or Dissatisfied
+322,Male,49,Returning,Business,Business,821,0,7,3,3,4,2,3,2,3,2,2,1,2,2,2,2,Neutral or Dissatisfied
+323,Male,59,Returning,Business,Business,3674,0,0,2,2,3,5,2,4,5,4,4,2,4,2,4,4,Satisfied
+324,Male,21,First-time,Business,Business,821,0,3,0,4,4,4,2,5,5,3,5,5,4,4,5,4,Satisfied
+325,Female,25,First-time,Business,Business,821,19,3,1,3,4,3,3,2,2,2,2,2,4,3,2,4,Neutral or Dissatisfied
+326,Female,31,Returning,Business,Business,3845,0,0,1,1,4,5,1,5,5,4,5,5,4,1,5,4,Satisfied
+327,Female,39,Returning,Business,Business,821,12,32,3,3,1,4,3,1,4,1,3,1,1,1,1,1,Neutral or Dissatisfied
+328,Male,56,Returning,Business,Business,3344,16,4,2,1,5,5,2,4,5,4,3,2,4,2,4,4,Satisfied
+329,Male,47,Returning,Business,Business,3954,9,0,3,3,2,3,3,1,3,1,3,1,1,1,1,1,Neutral or Dissatisfied
+330,Male,46,Returning,Business,Business,3293,0,5,4,4,1,4,4,2,3,2,3,2,2,2,2,2,Neutral or Dissatisfied
+331,Male,51,Returning,Business,Business,821,0,9,3,4,4,3,4,3,3,3,2,4,3,3,3,3,Neutral or Dissatisfied
+332,Male,44,Returning,Business,Economy,453,0,0,1,5,5,4,1,2,4,3,4,4,2,4,4,3,Satisfied
+333,Female,37,First-time,Business,Economy,421,5,15,3,5,1,5,3,5,2,2,2,2,3,5,2,1,Satisfied
+334,Male,26,First-time,Business,Economy,421,0,0,5,3,1,3,2,4,1,4,1,1,4,3,1,1,Neutral or Dissatisfied
+335,Female,56,Returning,Business,Business,421,10,0,0,0,4,3,3,1,3,0,1,5,1,1,1,1,Neutral or Dissatisfied
+336,Female,40,Returning,Business,Economy,421,0,0,4,4,4,4,4,1,4,4,4,4,4,4,4,4,Neutral or Dissatisfied
+337,Male,37,Returning,Personal,Economy,821,0,0,5,2,3,2,1,4,5,2,5,5,4,2,5,4,Neutral or Dissatisfied
+338,Female,57,Returning,Personal,Economy,853,0,9,5,4,4,4,3,4,4,4,3,3,4,4,4,4,Neutral or Dissatisfied
+339,Female,22,Returning,Personal,Economy,853,0,0,2,3,4,3,2,2,2,4,2,2,3,2,2,2,Neutral or Dissatisfied
+340,Male,16,Returning,Personal,Economy,853,0,0,5,3,5,3,1,5,2,3,2,2,5,3,2,4,Neutral or Dissatisfied
+341,Female,35,Returning,Personal,Economy,821,0,6,5,1,3,1,3,4,2,4,3,3,4,1,3,5,Neutral or Dissatisfied
+342,Male,27,Returning,Personal,Economy,821,0,12,4,2,5,2,2,3,3,5,3,3,4,2,3,5,Neutral or Dissatisfied
+343,Female,58,Returning,Personal,Economy,821,0,0,4,3,2,4,4,4,3,3,4,2,4,3,4,4,Neutral or Dissatisfied
+344,Male,8,Returning,Personal,Economy,821,18,13,1,2,4,2,4,2,1,5,1,1,4,2,1,4,Neutral or Dissatisfied
+345,Male,9,Returning,Personal,Economy,853,23,17,1,1,3,1,2,4,4,5,2,2,2,1,2,3,Neutral or Dissatisfied
+346,Male,68,Returning,Personal,Economy,853,27,36,2,1,3,1,4,1,4,2,4,4,4,1,4,3,Neutral or Dissatisfied
+347,Female,30,Returning,Personal,Economy,821,9,8,5,3,4,3,5,4,5,5,5,5,1,3,5,2,Neutral or Dissatisfied
+348,Male,56,Returning,Personal,Economy,853,0,0,4,3,3,3,1,3,1,4,1,1,4,3,1,5,Neutral or Dissatisfied
+349,Female,33,Returning,Personal,Economy,821,0,0,3,4,3,4,4,4,4,5,4,4,3,3,4,3,Neutral or Dissatisfied
+350,Female,25,Returning,Business,Business,853,0,12,5,5,4,4,5,5,4,5,4,4,5,5,4,5,Satisfied
+351,Male,57,Returning,Business,Business,821,31,30,2,2,1,4,2,2,3,2,2,3,2,2,2,2,Neutral or Dissatisfied
+352,Female,7,Returning,Personal,Economy Plus,853,0,0,5,1,4,1,2,3,5,2,5,5,4,2,5,5,Neutral or Dissatisfied
+353,Female,37,Returning,Personal,Economy Plus,821,0,15,5,3,2,3,3,3,4,4,5,5,1,4,5,1,Neutral or Dissatisfied
+354,Female,51,Returning,Personal,Economy Plus,821,23,10,5,2,5,5,4,2,4,2,4,2,2,2,2,2,Neutral or Dissatisfied
+355,Male,16,Returning,Personal,Economy Plus,821,0,0,3,2,3,2,3,4,5,1,5,5,2,2,5,2,Neutral or Dissatisfied
+356,Male,50,Returning,Business,Business,102,23,24,4,4,4,5,4,4,4,4,5,2,4,4,4,5,Satisfied
+357,Female,43,Returning,Business,Business,102,0,0,2,2,4,4,2,5,5,5,4,4,5,2,5,5,Satisfied
+358,Female,39,First-time,Business,Business,247,42,96,2,2,5,2,4,4,5,4,5,5,4,2,5,4,Neutral or Dissatisfied
+359,Male,55,Returning,Business,Business,3431,0,0,4,0,4,5,5,5,4,5,4,3,5,0,5,5,Satisfied
+360,Male,27,First-time,Business,Business,113,0,0,4,4,4,4,5,3,2,2,5,5,4,4,5,5,Neutral or Dissatisfied
+361,Male,40,Returning,Business,Business,229,0,0,5,5,5,4,5,5,5,5,4,5,5,5,5,5,Satisfied
+362,Male,24,First-time,Business,Economy,134,14,14,3,5,4,5,3,5,5,4,5,5,5,5,5,4,Satisfied
+363,Female,39,Returning,Business,Business,1869,0,0,2,2,3,4,2,5,4,5,3,5,5,2,5,5,Satisfied
+364,Female,33,First-time,Business,Business,113,0,0,3,3,3,3,5,4,5,5,5,5,4,3,5,5,Neutral or Dissatisfied
+365,Female,42,Returning,Business,Business,1924,13,7,2,2,5,5,2,4,4,4,4,5,4,2,4,4,Satisfied
+366,Female,35,Returning,Business,Business,164,33,29,5,5,5,4,5,5,5,5,5,2,5,5,5,5,Satisfied
+367,Male,26,First-time,Business,Business,102,0,0,0,0,5,0,1,3,4,3,4,4,4,0,4,5,Satisfied
+368,Female,46,Returning,Business,Business,354,43,43,0,0,3,5,3,1,4,1,3,4,1,0,1,1,Satisfied
+369,Female,53,Returning,Business,Business,2366,0,0,2,2,5,4,2,4,4,4,3,4,4,2,4,4,Satisfied
+370,Male,49,Returning,Business,Business,3770,0,0,1,1,5,5,1,5,4,5,4,4,5,1,5,4,Satisfied
+371,Male,50,Returning,Business,Business,482,0,3,4,4,5,5,4,4,5,4,5,3,4,4,4,4,Satisfied
+372,Male,50,Returning,Business,Business,3579,25,22,1,1,5,4,1,4,4,5,5,4,4,1,4,4,Satisfied
+373,Male,43,Returning,Business,Business,2169,0,0,3,3,4,5,3,5,4,4,3,5,5,3,5,5,Satisfied
+374,Female,39,Returning,Business,Business,2895,27,30,3,2,5,4,3,5,5,5,3,4,5,3,5,5,Satisfied
+375,Male,53,Returning,Business,Business,2235,0,3,3,3,4,4,3,4,5,4,5,5,4,3,4,4,Satisfied
+376,Male,54,Returning,Business,Business,270,44,26,1,1,4,4,4,4,4,4,4,3,4,0,4,4,Satisfied
+377,Female,54,Returning,Business,Business,3628,14,6,4,4,3,5,4,4,5,4,3,3,4,4,4,4,Satisfied
+378,Male,41,First-time,Business,Business,309,0,0,1,1,4,5,4,5,5,3,5,5,4,5,5,5,Satisfied
+379,Female,42,Returning,Business,Business,247,0,0,3,3,3,4,3,5,5,5,3,4,5,3,5,5,Satisfied
+380,Male,45,Returning,Business,Business,1507,0,0,0,0,4,5,4,5,4,5,3,4,5,0,5,5,Satisfied
+381,Female,56,Returning,Business,Business,102,34,31,4,5,4,4,5,4,4,4,4,3,4,5,4,4,Satisfied
+382,Female,46,Returning,Business,Business,1987,70,66,3,3,5,4,3,4,4,4,3,3,4,3,4,4,Satisfied
+383,Female,58,Returning,Business,Business,3442,13,16,4,4,4,5,4,5,5,5,3,5,5,4,5,4,Satisfied
+384,Male,43,Returning,Business,Business,102,0,0,1,1,5,5,1,5,4,5,5,5,5,1,5,4,Satisfied
+385,Female,45,Returning,Business,Business,229,0,0,0,0,3,4,4,2,4,2,3,4,2,0,2,2,Satisfied
+386,Female,58,Returning,Business,Business,2759,59,51,2,2,3,5,2,4,4,4,4,2,4,2,4,4,Satisfied
+387,Female,54,Returning,Business,Business,2722,0,0,4,4,4,5,4,4,4,4,5,3,4,4,4,4,Satisfied
+388,Male,69,Returning,Business,Business,2848,0,0,3,3,3,4,3,4,4,4,3,3,4,3,4,4,Satisfied
+389,Female,27,First-time,Business,Business,102,0,0,2,2,3,2,3,5,1,4,1,1,5,2,1,5,Neutral or Dissatisfied
+390,Male,58,Returning,Business,Business,3432,0,0,1,4,4,5,4,4,5,4,4,2,4,4,4,4,Satisfied
+391,Female,52,Returning,Business,Business,1954,0,0,3,3,5,5,3,5,5,5,3,3,5,3,5,5,Satisfied
+392,Male,52,Returning,Business,Business,1938,0,31,5,5,4,5,5,4,5,4,3,3,4,5,4,4,Satisfied
+393,Male,49,Returning,Business,Business,134,0,0,4,4,3,4,4,4,5,4,5,2,4,4,4,5,Satisfied
+394,Female,35,Returning,Business,Business,140,3,5,1,1,4,4,1,3,4,4,5,2,3,1,3,4,Satisfied
+395,Female,54,Returning,Business,Business,3325,0,0,5,5,4,5,5,5,5,5,5,4,5,5,5,5,Satisfied
+396,Male,35,Returning,Business,Business,3838,0,3,1,5,2,4,1,3,3,3,3,1,3,3,3,3,Neutral or Dissatisfied
+397,Female,26,First-time,Business,Business,158,0,1,3,2,1,2,4,3,3,3,3,3,4,2,3,4,Neutral or Dissatisfied
+398,Male,52,Returning,Business,Business,134,0,0,4,4,4,4,4,4,5,4,4,2,4,4,4,4,Satisfied
+399,Male,38,First-time,Business,Business,164,0,0,4,4,5,4,3,4,2,4,1,1,4,4,1,5,Satisfied
+400,Male,23,First-time,Business,Economy,134,0,0,0,1,3,1,1,3,4,4,5,5,5,0,5,5,Satisfied
+401,Female,36,Returning,Business,Business,1818,0,4,4,4,5,4,4,5,4,5,5,2,5,4,5,5,Satisfied
+402,Male,42,Returning,Business,Business,3824,0,0,5,5,5,4,5,4,4,4,3,4,4,5,4,4,Satisfied
+403,Female,39,Returning,Business,Business,1661,0,0,3,5,3,5,3,4,4,5,4,5,4,3,4,4,Satisfied
+404,Male,39,Returning,Business,Business,102,0,0,5,4,1,3,4,2,3,1,2,2,2,4,2,4,Neutral or Dissatisfied
+405,Male,59,Returning,Business,Business,309,48,55,2,2,2,2,2,3,2,3,4,3,3,3,3,3,Neutral or Dissatisfied
+406,Male,36,First-time,Business,Business,134,0,0,1,1,4,1,1,4,4,2,4,4,4,2,4,5,Neutral or Dissatisfied
+407,Female,32,Returning,Business,Business,164,0,0,4,4,4,1,4,1,2,1,1,1,4,2,1,4,Neutral or Dissatisfied
+408,Female,47,Returning,Business,Business,3169,0,0,5,5,2,2,5,2,2,2,1,1,2,2,2,2,Neutral or Dissatisfied
+409,Male,48,Returning,Business,Business,229,39,45,5,5,2,3,5,1,4,1,2,4,1,1,1,1,Neutral or Dissatisfied
+410,Male,57,Returning,Business,Business,3687,0,0,1,1,4,4,1,2,4,2,1,1,2,2,2,2,Neutral or Dissatisfied
+411,Female,49,Returning,Business,Business,2739,1,0,5,0,5,4,3,4,5,4,4,2,4,0,4,2,Satisfied
+412,Male,58,Returning,Business,Business,158,0,0,2,2,3,4,2,1,4,1,2,2,1,2,1,2,Neutral or Dissatisfied
+413,Male,53,Returning,Business,Business,1822,0,0,1,4,3,2,4,1,3,1,3,1,1,2,1,2,Neutral or Dissatisfied
+414,Male,51,Returning,Business,Business,3458,0,2,4,0,5,5,1,2,5,2,3,2,2,0,2,2,Satisfied
+415,Female,38,First-time,Business,Business,229,0,0,4,4,1,4,3,1,5,2,2,2,3,4,2,4,Neutral or Dissatisfied
+416,Female,44,Returning,Business,Business,3915,0,0,2,2,3,3,2,4,2,3,4,5,4,1,4,1,Neutral or Dissatisfied
+417,Female,36,Returning,Business,Business,2474,0,0,1,1,5,5,1,5,4,5,5,3,5,1,5,4,Satisfied
+418,Female,48,Returning,Business,Business,270,0,5,5,5,5,5,5,5,5,5,4,4,5,5,5,5,Satisfied
+419,Male,58,Returning,Business,Business,309,0,1,5,3,3,4,5,4,4,4,4,4,4,5,4,4,Satisfied
+420,Male,36,Returning,Business,Business,140,88,85,2,2,1,3,2,1,4,1,2,2,1,3,1,3,Neutral or Dissatisfied
+421,Female,25,First-time,Business,Business,312,0,0,0,4,4,4,4,3,4,2,4,4,5,3,4,4,Neutral or Dissatisfied
+422,Male,42,Returning,Business,Business,3957,7,50,4,4,4,5,4,5,5,5,4,4,5,4,5,5,Satisfied
+423,Female,30,First-time,Business,Business,270,0,0,2,2,5,2,1,5,2,3,2,2,5,1,2,5,Neutral or Dissatisfied
+424,Female,51,Returning,Business,Business,3873,2,0,1,4,4,5,4,4,4,4,3,4,4,4,4,4,Satisfied
+425,Male,59,Returning,Business,Business,3800,0,0,4,0,5,4,3,1,4,1,5,5,1,0,1,1,Satisfied
+426,Female,39,Returning,Business,Business,1770,0,2,1,1,1,3,1,4,4,4,4,1,4,4,4,4,Neutral or Dissatisfied
+427,Female,35,First-time,Business,Business,113,0,0,1,1,1,1,4,2,3,4,3,3,3,1,3,4,Neutral or Dissatisfied
+428,Female,40,Returning,Business,Business,1654,0,0,3,3,3,4,3,1,4,2,4,3,1,4,1,4,Neutral or Dissatisfied
+429,Female,52,Returning,Personal,Business,309,6,16,5,2,3,5,5,2,4,2,4,2,2,2,2,2,Neutral or Dissatisfied
+430,Female,24,Returning,Personal,Business,140,74,76,5,3,1,3,3,1,2,1,2,2,4,3,2,1,Neutral or Dissatisfied
+431,Male,47,Returning,Personal,Business,102,0,0,2,0,4,4,3,1,4,0,4,5,1,1,1,1,Neutral or Dissatisfied
+432,Female,46,Returning,Personal,Business,247,0,0,5,2,4,4,3,1,5,2,4,3,1,2,1,1,Neutral or Dissatisfied
+433,Male,63,Returning,Personal,Business,102,0,0,4,4,1,3,3,2,5,4,4,3,2,4,2,2,Neutral or Dissatisfied
+434,Female,27,Returning,Personal,Business,158,24,23,5,3,4,3,5,3,3,3,3,3,5,3,3,5,Neutral or Dissatisfied
+435,Male,53,Returning,Personal,Business,134,80,71,2,2,4,3,3,2,3,2,3,5,2,2,2,2,Neutral or Dissatisfied
+436,Female,60,Returning,Personal,Business,396,0,0,5,1,5,5,3,2,1,1,2,3,2,1,2,3,Neutral or Dissatisfied
+437,Male,46,Returning,Personal,Business,134,0,0,4,3,3,5,2,5,5,3,5,4,5,3,5,5,Neutral or Dissatisfied
+438,Female,63,Returning,Personal,Business,282,0,0,4,4,5,5,2,1,3,4,1,5,1,3,1,1,Neutral or Dissatisfied
+439,Female,57,Returning,Personal,Business,134,6,7,3,4,4,3,2,2,5,4,4,3,2,4,2,4,Neutral or Dissatisfied
+440,Female,66,Returning,Personal,Business,396,0,0,5,4,3,5,4,1,5,4,3,4,1,1,1,1,Neutral or Dissatisfied
+441,Male,31,Returning,Personal,Business,229,0,0,5,5,4,5,4,3,5,2,5,5,5,5,5,4,Satisfied
+442,Female,14,Returning,Personal,Business,309,0,0,4,3,1,3,4,3,5,5,5,5,1,3,5,2,Neutral or Dissatisfied
+443,Male,35,Returning,Personal,Business,247,0,0,4,0,5,4,2,3,4,0,5,4,3,1,3,3,Neutral or Dissatisfied
+444,Male,48,Returning,Personal,Business,247,27,32,5,5,4,5,1,3,4,5,4,3,3,5,3,3,Satisfied
+445,Female,41,Returning,Business,Business,3060,0,0,4,4,4,4,4,5,5,5,4,4,5,4,5,5,Satisfied
+446,Male,46,Returning,Business,Business,2978,0,0,5,0,3,4,2,3,4,3,4,3,3,0,3,3,Satisfied
+447,Female,51,Returning,Business,Business,354,7,8,1,1,5,5,1,5,5,5,5,5,5,1,5,5,Satisfied
+448,Male,48,Returning,Business,Business,2607,0,0,4,4,3,4,4,5,5,5,5,5,5,4,5,5,Satisfied
+449,Male,42,First-time,Business,Business,282,0,0,4,4,5,4,3,5,3,3,3,3,4,4,3,5,Neutral or Dissatisfied
+450,Female,32,Returning,Business,Business,1804,0,0,2,2,3,5,2,5,4,2,5,5,4,2,5,4,Satisfied
+451,Female,27,First-time,Business,Business,158,0,0,5,5,3,5,3,5,4,3,4,4,5,5,4,5,Satisfied
+452,Female,39,Returning,Business,Business,3409,0,0,4,0,4,5,4,1,5,1,3,4,1,0,1,1,Satisfied
+453,Male,55,Returning,Business,Business,134,0,0,4,4,3,4,4,4,4,4,4,2,4,4,4,4,Satisfied
+454,Male,59,Returning,Business,Business,312,26,18,1,1,3,4,1,5,4,5,5,2,5,1,5,5,Satisfied
+455,Male,47,Returning,Business,Business,3145,51,34,5,5,4,5,5,5,5,5,3,4,5,5,5,5,Satisfied
+456,Female,34,Returning,Business,Business,3310,1,1,5,5,4,5,5,5,5,5,3,2,5,5,5,5,Satisfied
+457,Female,48,Returning,Business,Business,3945,0,18,5,5,5,4,5,5,4,5,5,3,5,5,5,5,Satisfied
+458,Male,43,Returning,Business,Business,113,0,0,5,5,4,4,5,5,4,5,4,5,5,5,5,4,Satisfied
+459,Male,59,Returning,Business,Business,134,0,10,1,1,3,4,1,4,4,4,5,2,4,1,4,5,Satisfied
+460,Female,38,Returning,Business,Business,1911,0,0,0,0,4,5,1,1,5,2,5,3,1,0,1,2,Satisfied
+461,Male,41,Returning,Business,Business,2227,0,0,3,3,4,5,3,4,5,4,4,5,4,3,4,4,Satisfied
+462,Female,53,Returning,Business,Business,102,0,1,1,1,4,5,1,4,5,4,3,2,4,1,4,4,Satisfied
+463,Female,44,Returning,Business,Business,2500,22,12,1,1,5,4,1,5,4,5,3,3,5,1,5,5,Satisfied
+464,Female,26,Returning,Business,Business,229,0,0,5,5,4,4,5,4,4,4,4,4,4,5,4,5,Satisfied
+465,Female,30,Returning,Business,Business,396,0,0,1,1,4,4,1,4,5,3,5,5,5,1,5,4,Satisfied
+466,Female,48,Returning,Business,Business,102,0,0,3,3,5,4,3,4,4,5,3,5,4,3,4,4,Satisfied
+467,Female,47,Returning,Business,Business,3730,0,0,5,5,5,4,5,4,5,4,5,4,4,5,4,4,Satisfied
+468,Female,51,Returning,Business,Business,1568,0,0,5,5,5,5,5,4,4,4,5,3,4,5,4,5,Satisfied
+469,Male,48,Returning,Business,Business,3617,0,15,5,0,5,5,4,3,5,3,4,2,3,0,3,3,Satisfied
+470,Male,43,Returning,Business,Business,1634,0,0,2,3,4,5,3,5,4,5,4,5,5,3,5,4,Satisfied
+471,Female,56,Returning,Business,Business,89,0,0,1,1,4,5,1,4,5,4,4,4,4,1,4,4,Satisfied
+472,Male,40,First-time,Business,Business,113,22,20,1,1,4,1,4,5,3,3,3,3,4,1,3,5,Neutral or Dissatisfied
+473,Male,57,Returning,Business,Business,1760,0,0,4,0,5,5,4,2,5,2,5,3,2,0,2,2,Satisfied
+474,Female,39,Returning,Business,Business,1681,0,0,4,4,4,4,4,5,5,5,5,5,5,4,5,5,Satisfied
+475,Female,59,Returning,Business,Business,3517,0,0,1,1,3,5,1,5,5,5,4,5,5,1,5,5,Satisfied
+476,Female,62,Returning,Business,Business,3490,22,19,3,3,5,4,3,4,5,4,3,2,4,3,4,5,Satisfied
+477,Male,57,Returning,Business,Business,1595,63,73,3,3,4,5,3,5,5,5,5,3,5,3,5,5,Satisfied
+478,Female,43,Returning,Business,Business,89,0,0,4,1,4,5,4,4,4,4,5,3,4,4,4,5,Satisfied
+479,Male,28,First-time,Business,Business,309,0,11,4,4,3,4,1,5,1,3,1,1,5,4,1,4,Neutral or Dissatisfied
+480,Female,37,First-time,Business,Business,164,0,0,4,4,3,4,4,4,1,5,1,1,4,4,1,5,Satisfied
+481,Male,55,Returning,Business,Business,134,0,0,1,1,4,5,1,4,5,4,4,4,4,1,4,4,Satisfied
+482,Female,30,Returning,Business,Business,482,0,0,1,1,4,5,1,3,5,3,5,5,5,1,5,4,Satisfied
+483,Female,34,Returning,Business,Business,2553,0,0,5,5,4,5,5,5,5,5,3,3,5,5,5,4,Satisfied
+484,Male,45,Returning,Business,Business,1528,5,1,0,0,3,4,3,3,4,3,5,2,3,0,3,3,Satisfied
+485,Male,39,Returning,Business,Business,2540,14,11,4,0,4,4,5,4,5,4,4,5,4,0,4,4,Satisfied
+486,Male,48,Returning,Business,Business,354,15,23,1,1,3,4,1,4,5,4,5,3,4,1,4,4,Satisfied
+487,Male,23,First-time,Business,Business,158,0,0,5,0,3,0,2,4,2,4,2,2,4,0,2,4,Satisfied
+488,Male,48,Returning,Business,Business,89,19,16,4,4,4,4,4,4,5,4,5,4,4,4,4,4,Satisfied
+489,Male,20,First-time,Business,Economy,164,0,1,0,2,4,2,3,3,2,4,2,2,5,2,2,4,Neutral or Dissatisfied
+490,Female,51,Returning,Business,Business,2752,0,2,1,1,3,5,1,4,4,4,4,4,4,1,4,4,Satisfied
+491,Female,57,Returning,Business,Business,229,0,0,3,3,4,4,3,5,5,5,3,2,5,3,5,5,Satisfied
+492,Male,57,Returning,Business,Business,2884,3,21,1,1,3,5,1,4,4,4,4,3,4,1,4,4,Satisfied
+493,Male,59,Returning,Business,Business,134,0,0,4,0,4,4,3,3,5,3,4,2,3,0,3,3,Satisfied
+494,Female,32,First-time,Business,Business,309,0,0,3,3,5,3,1,5,4,5,4,4,4,3,4,5,Neutral or Dissatisfied
+495,Female,59,Returning,Business,Business,3621,0,4,4,4,4,4,4,4,4,4,3,5,4,4,4,4,Satisfied
+496,Female,34,Returning,Business,Business,3008,0,0,5,5,5,5,5,5,5,5,5,3,5,5,5,5,Satisfied
+497,Female,41,Returning,Business,Business,164,9,0,1,1,5,5,1,4,5,4,3,2,4,1,4,5,Satisfied
+498,Female,49,Returning,Business,Business,3603,0,0,5,5,3,5,5,4,5,4,3,3,4,5,4,5,Satisfied
+499,Female,57,Returning,Business,Business,2541,0,0,2,4,3,4,2,5,5,5,3,3,5,2,5,5,Satisfied
+500,Male,48,Returning,Business,Business,2469,0,0,2,2,5,5,2,4,4,4,5,4,4,2,4,4,Satisfied

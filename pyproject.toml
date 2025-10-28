@@ -7,6 +7,8 @@ project_name = "asi2025"
 package_name = "asi2025"
 kedro_init_version = "1.0.0"
 source_dir = "src"
+tools = "['Linting', 'Testing', 'Data Structure']"
+example_pipeline = "False"
 
 [tool.kedro_telemetry]
-project_id = "f649c873d5324bef95e2ccc3fa8b4eb4"
+project_id = "f31065addca742519ac5ac9b47e93298"

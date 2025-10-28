@@ -1,0 +1,13 @@
+# ile wierszy wczytać z raw_df
+sample_n: null
+
+# kolumna celu + podział
+target_col: "Satisfaction"
+test_size: 0.2
+random_state: 42
+
+# hiperparametry modelu baseline
+model:
+  max_iter: 2000
+  C: 1.0
+  random_state: 42

@@ -1,0 +1,35 @@
+# wejście
+raw_airline:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/airline_passenger_satisfaction_sample.csv
+
+# artefakty pośrednie (
+raw_df:
+  type: memory_dataset.MemoryDataset
+clean_df:
+  type: memory_dataset.MemoryDataset
+
+X_train:
+  type: pickle.PickleDataset
+  filepath: data/02_interim/X_train.pkl
+X_test:
+  type: pickle.PickleDataset
+  filepath: data/02_interim/X_test.pkl
+y_train:
+  type: pickle.PickleDataset
+  filepath: data/02_interim/y_train.pkl
+y_test:
+  type: pickle.PickleDataset
+  filepath: data/02_interim/y_test.pkl
+feature_names:
+  type: pickle.PickleDataset
+  filepath: data/02_interim/feature_names.pkl
+
+# wyjścia
+model_baseline:
+  type: pickle.PickleDataset
+  filepath: data/03_processed/model_baseline.pkl
+
+metrics:
+  type: json.JSONDataset
+  filepath: data/03_processed/metrics.json

@@ -21,7 +21,7 @@ project_name = "asi2025"
 kedro_init_version = "1.0.0"
 tools = "['Linting', 'Testing', 'Data Structure']"
 example_pipeline = "False"
-source_dir = "src"
+source_dir = "asi2025/src"
 
 [tool.ruff]
 line-length = 88

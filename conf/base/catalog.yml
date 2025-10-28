@@ -1,0 +1,37 @@
+raw_data:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: data/01_raw/airline_passenger_satisfaction_sample.csv
+  load_args:
+    encoding: utf-8
+
+clean_data:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/02_interim/clean.parquet
+  save_args:
+    index: false
+
+X_train:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/03_processed/X_train.parquet
+
+X_test:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/03_processed/X_test.parquet
+
+y_train:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/03_processed/y_train.parquet
+
+y_test:
+  type: kedro_datasets.pandas.ParquetDataset
+  filepath: data/03_processed/y_test.parquet
+
+model_baseline:
+  type: kedro_datasets.pickle.PickleDataset
+  filepath: data/06_models/model_baseline.pkl
+
+metrics_baseline:
+  type: kedro_datasets.json.JSONDataset
+  filepath: data/09_tracking/metrics_baseline.json
+  save_args:
+    indent: 2

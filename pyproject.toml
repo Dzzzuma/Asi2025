@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.kedro]
+project_name = "asi2025"
+package_name = "asi2025"
+kedro_init_version = "1.0.0"
+source_dir = "src"
+
+[tool.kedro_telemetry]
+project_id = "f649c873d5324bef95e2ccc3fa8b4eb4"

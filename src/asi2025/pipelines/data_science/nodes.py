@@ -1,8 +1,10 @@
 from __future__ import annotations
-
 from typing import Any, Dict, Tuple
 
 import pandas as pd
+import wandb
+import joblib
+from pathlib import Path
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
@@ -56,7 +58,8 @@ def split_data(
 
     strat = y if stratify else None
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y,
+        X,
+        y,
         test_size=float(test_size),
         random_state=int(random_state),
         stratify=strat,
@@ -72,7 +75,7 @@ def split_data(
 # 4) TRAIN (pełny preprocessing w środku modelu)
 def train_baseline(
     X_train: pd.DataFrame,
-    y_train: pd.DataFrame,   # DataFrame z jedną kolumną (target)
+    y_train: pd.DataFrame,  # DataFrame z jedną kolumną (target)
     params: Dict[str, Any] | None,
 ):
     """
@@ -80,12 +83,26 @@ def train_baseline(
       - num: imputacja medianą
       - cat: imputacja najczęstszą + OneHotEncoder(handle_unknown="ignore")
       - model: LogisticRegression(max_iter z params)
-    Dzięki temu poradzi sobie z kategorycznymi ('Female') i NaN.
+    Dzięki temu pipeline poradzi sobie z kategorycznymi ('Female') i NaN.
     """
+
+    import wandb
+    import joblib
+    from pathlib import Path
+
+    # --- LOGOWANIE DO W&B ---
+    wandb.init(
+        project="asi2025",               # 🔹 nazwa projektu w wandb.ai
+        job_type="train",
+        config=params or {},
+        settings=wandb.Settings(start_method="thread")  # bezpieczne dla Kedro
+    )
+
+    # --- PARAMETRY MODELU ---
     params = params or {}
     max_iter = int(params.get("max_iter", 5000))
 
-    # kolumny
+    # --- PRZYGOTOWANIE KOLUMN ---
     num_cols = X_train.select_dtypes(include=["number"]).columns.tolist()
     cat_cols = [c for c in X_train.columns if c not in num_cols]
 
@@ -114,9 +131,30 @@ def train_baseline(
         ]
     )
 
-    # y_train jako 1D array/Series
+    # --- TRENING ---
     y_train_1d = y_train.iloc[:, 0]
     clf.fit(X_train, y_train_1d)
+
+    # --- LOGOWANIE INFORMACJI O TRENINGU ---
+    wandb.log({"train_samples": len(X_train)})
+
+    # --- ZAPISZ MODEL LOKALNIE ---
+    output_path = Path("data/06_models/model_baseline.pkl")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    joblib.dump(clf, output_path)
+
+    # --- WYŚLIJ MODEL JAKO ARTEFAKT DO W&B ---
+    artifact = wandb.Artifact(
+        name="model_baseline",
+        type="model",
+        description="Baseline model trained with LogisticRegression",
+    )
+    artifact.add_file(str(output_path))
+    wandb.log_artifact(artifact)
+
+    # --- ZAKOŃCZ RUN W&B ---
+    wandb.finish()
+
     return clf
 
 
@@ -124,7 +162,7 @@ def train_baseline(
 def evaluate(
     model,
     X_test: pd.DataFrame,
-    y_test: pd.DataFrame,   # DataFrame z jedną kolumną
+    y_test: pd.DataFrame,
 ) -> Dict[str, float]:
     """
     Zwraca metryki jako dict (zapisze je JSONDataset).
@@ -132,11 +170,17 @@ def evaluate(
     - f1_weighted (zawsze),
     - roc_auc (gdy binary i model ma predict_proba).
     """
+    import wandb
+
+    # jeśli nie ma aktywnego runa, inicjuj nowy
+    if wandb.run is None:
+        wandb.init(project="asi2025", job_type="evaluate", reinit=True)
+
     metrics: Dict[str, float] = {}
 
     y_true = y_test.iloc[:, 0]
-
     y_pred = model.predict(X_test)
+
     metrics["accuracy"] = float(accuracy_score(y_true, y_pred))
     metrics["f1_weighted"] = float(f1_score(y_true, y_pred, average="weighted"))
 
@@ -149,4 +193,9 @@ def evaluate(
     except Exception:
         pass
 
+    # --- LOGOWANIE METRYK DO W&B ---
+    wandb.log(metrics)
+    wandb.finish()
+
     return metrics
+

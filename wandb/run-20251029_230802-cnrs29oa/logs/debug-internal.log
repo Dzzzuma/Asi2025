@@ -1,0 +1,12 @@
+{"time":"2025-10-29T23:08:05.2457348+01:00","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-10-29T23:08:13.0777202+01:00","level":"INFO","msg":"stream: created new stream","id":"cnrs29oa"}
+{"time":"2025-10-29T23:08:13.0777202+01:00","level":"INFO","msg":"handler: started","stream_id":"cnrs29oa"}
+{"time":"2025-10-29T23:08:13.0809636+01:00","level":"INFO","msg":"stream: started","id":"cnrs29oa"}
+{"time":"2025-10-29T23:08:13.0815756+01:00","level":"INFO","msg":"writer: started","stream_id":"cnrs29oa"}
+{"time":"2025-10-29T23:08:13.0815756+01:00","level":"INFO","msg":"sender: started","stream_id":"cnrs29oa"}
+{"time":"2025-10-29T23:08:17.8887323+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-29T23:08:18.4102296+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-10-29T23:08:18.423073+01:00","level":"INFO","msg":"stream: closing","id":"cnrs29oa"}
+{"time":"2025-10-29T23:08:18.423073+01:00","level":"INFO","msg":"handler: closed","stream_id":"cnrs29oa"}
+{"time":"2025-10-29T23:08:18.43031+01:00","level":"INFO","msg":"sender: closed","stream_id":"cnrs29oa"}
+{"time":"2025-10-29T23:08:18.43031+01:00","level":"INFO","msg":"stream: closed","id":"cnrs29oa"}

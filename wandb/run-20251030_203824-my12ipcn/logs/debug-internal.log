@@ -1,0 +1,12 @@
+{"time":"2025-10-30T20:38:24.811348+01:00","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-10-30T20:38:25.321238+01:00","level":"INFO","msg":"stream: created new stream","id":"my12ipcn"}
+{"time":"2025-10-30T20:38:25.321238+01:00","level":"INFO","msg":"handler: started","stream_id":"my12ipcn"}
+{"time":"2025-10-30T20:38:25.3381454+01:00","level":"INFO","msg":"stream: started","id":"my12ipcn"}
+{"time":"2025-10-30T20:38:25.3381454+01:00","level":"INFO","msg":"writer: started","stream_id":"my12ipcn"}
+{"time":"2025-10-30T20:38:25.3381454+01:00","level":"INFO","msg":"sender: started","stream_id":"my12ipcn"}
+{"time":"2025-10-30T20:38:27.7784731+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-30T20:38:28.4008367+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-10-30T20:38:28.4321415+01:00","level":"INFO","msg":"stream: closing","id":"my12ipcn"}
+{"time":"2025-10-30T20:38:28.4321415+01:00","level":"INFO","msg":"handler: closed","stream_id":"my12ipcn"}
+{"time":"2025-10-30T20:38:28.4413489+01:00","level":"INFO","msg":"sender: closed","stream_id":"my12ipcn"}
+{"time":"2025-10-30T20:38:28.4413489+01:00","level":"INFO","msg":"stream: closed","id":"my12ipcn"}

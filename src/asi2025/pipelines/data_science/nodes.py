@@ -1,10 +1,10 @@
 from __future__ import annotations
+
+from pathlib import Path
 from typing import Any, Dict, Tuple
 
-import pandas as pd
-import wandb
 import joblib
-from pathlib import Path
+import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
@@ -12,6 +12,8 @@ from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline as SkPipeline
 from sklearn.preprocessing import OneHotEncoder
+
+import wandb
 
 
 # 1) LOAD
@@ -49,8 +51,7 @@ def split_data(
     """
     if target_col not in df.columns:
         raise KeyError(
-            f"Kolumna celu '{target_col}' nie istnieje. "
-            f"Dostępne: {list(df.columns)[:20]}..."
+            f"Kolumna celu '{target_col}' nie istnieje. " f"Dostępne: {list(df.columns)[:20]}..."
         )
 
     y = df[target_col]
@@ -86,16 +87,16 @@ def train_baseline(
     Dzięki temu pipeline poradzi sobie z kategorycznymi ('Female') i NaN.
     """
 
+
+
     import wandb
-    import joblib
-    from pathlib import Path
 
     # --- LOGOWANIE DO W&B ---
     wandb.init(
-        project="asi2025",               # 🔹 nazwa projektu w wandb.ai
+        project="asi2025",  # 🔹 nazwa projektu w wandb.ai
         job_type="train",
         config=params or {},
-        settings=wandb.Settings(start_method="thread")  # bezpieczne dla Kedro
+        settings=wandb.Settings(start_method="thread"),  # bezpieczne dla Kedro
     )
 
     # --- PARAMETRY MODELU ---
@@ -170,7 +171,6 @@ def evaluate(
     - f1_weighted (zawsze),
     - roc_auc (gdy binary i model ma predict_proba).
     """
-    import wandb
 
     # jeśli nie ma aktywnego runa, inicjuj nowy
     if wandb.run is None:
@@ -198,4 +198,3 @@ def evaluate(
     wandb.finish()
 
     return metrics
-

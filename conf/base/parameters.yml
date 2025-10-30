@@ -1,5 +1,5 @@
 seed: 41
-target_col: "Satisfaction"   
+target_col: "Satisfaction"
 
 split:
   test_size: 0.2

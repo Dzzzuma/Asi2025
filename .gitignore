@@ -27,3 +27,6 @@ data/**/README.md
 # jeśli ktoś pracuje na Macu
 .DS_Store
 Thumbs.db
+
+# Kedro local configuration (do not commit!)
+conf/local/*

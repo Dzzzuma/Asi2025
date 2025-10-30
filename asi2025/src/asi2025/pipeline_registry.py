@@ -2,12 +2,11 @@
 
 from __future__ import annotations
 
-from asi2025.pipelines.data_science import pipeline as ds
+from kedro.pipeline import Pipeline
+
+from asi2025.pipelines.data_science.pipeline import create_pipeline
 
 
-def register_pipelines():
-    ds_pipe = ds.create_pipeline()
-    return {
-        "data_science": ds_pipe,
-        "__default__": ds_pipe,
-    }
+def register_pipelines() -> dict[str, Pipeline]:
+    data_science = create_pipeline()
+    return {"__default__": data_science, "data_science": data_science}

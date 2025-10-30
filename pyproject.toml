@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.kedro]
+project_name = "asi2025"
+package_name = "asi2025"
+kedro_init_version = "1.0.0"
+source_dir = "src"
+tools = "['Linting', 'Testing', 'Data Structure']"
+example_pipeline = "False"
+
+[tool.kedro_telemetry]
+project_id = "f31065addca742519ac5ac9b47e93298"

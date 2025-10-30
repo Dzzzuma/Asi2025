@@ -1,0 +1,11 @@
+seed: 41
+target_col: "Satisfaction"   
+
+split:
+  test_size: 0.2
+  random_state: 42
+  stratify: true
+
+model:
+  kind: "logreg"
+  max_iter: 5000

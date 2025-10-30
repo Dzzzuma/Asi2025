@@ -1,0 +1,12 @@
+{"time":"2025-10-30T20:48:36.5952814+01:00","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-10-30T20:48:44.4043895+01:00","level":"INFO","msg":"stream: created new stream","id":"9uetubbg"}
+{"time":"2025-10-30T20:48:44.4049407+01:00","level":"INFO","msg":"handler: started","stream_id":"9uetubbg"}
+{"time":"2025-10-30T20:48:44.4074335+01:00","level":"INFO","msg":"stream: started","id":"9uetubbg"}
+{"time":"2025-10-30T20:48:44.4074335+01:00","level":"INFO","msg":"writer: started","stream_id":"9uetubbg"}
+{"time":"2025-10-30T20:48:44.4074335+01:00","level":"INFO","msg":"sender: started","stream_id":"9uetubbg"}
+{"time":"2025-10-30T20:48:49.0114011+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-30T20:48:49.4301053+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-10-30T20:48:49.4517567+01:00","level":"INFO","msg":"stream: closing","id":"9uetubbg"}
+{"time":"2025-10-30T20:48:49.4517567+01:00","level":"INFO","msg":"handler: closed","stream_id":"9uetubbg"}
+{"time":"2025-10-30T20:48:49.4597378+01:00","level":"INFO","msg":"sender: closed","stream_id":"9uetubbg"}
+{"time":"2025-10-30T20:48:49.4597378+01:00","level":"INFO","msg":"stream: closed","id":"9uetubbg"}

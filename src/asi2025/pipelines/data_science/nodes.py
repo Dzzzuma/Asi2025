@@ -87,8 +87,6 @@ def train_baseline(
     Dzięki temu pipeline poradzi sobie z kategorycznymi ('Female') i NaN.
     """
 
-
-
     import wandb
 
     # --- LOGOWANIE DO W&B ---

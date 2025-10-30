@@ -1,0 +1,46 @@
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            6o6l6qyuwib94uml36f8sdmbe21q5cuf:
+                args:
+                    - -q
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "511078113280"
+                        used: "356777672704"
+                email: sadej.jan1@gmail.com
+                executable: C:\Users\uniaw\anaconda3\envs\asi-ml\python.exe
+                git:
+                    commit: ab8a75ccd804d1cacd0c4bf986fe6d956e26a276
+                    remote: https://github.com/Dzzzuma/Asi2025
+                host: DESKTOP-5FMQQBC
+                memory:
+                    total: "17010921472"
+                os: Windows-10-10.0.26200-SP0
+                program: -m __main__
+                python: CPython 3.11.14
+                root: C:\Users\uniaw\Asi2025
+                startedAt: "2025-10-30T19:54:36.093884Z"
+                writerId: 6o6l6qyuwib94uml36f8sdmbe21q5cuf
+        m: []
+        python_version: 3.11.14
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+            "4": 3.11.14
+            "5": 0.22.3
+            "8":
+                - 3
+            "10":
+                - 20
+            "12": 0.22.3
+            "13": windows-amd64

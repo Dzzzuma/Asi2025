@@ -1,14 +1,14 @@
 {
   "os": "Windows-10-10.0.26200-SP0",
   "python": "CPython 3.11.14",
-  "startedAt": "2025-10-30T19:38:24.800186Z",
+  "startedAt": "2025-10-30T19:54:36.093884Z",
   "args": [
-    "run"
+    "-q"
   ],
   "program": "-m __main__",
   "git": {
     "remote": "https://github.com/Dzzzuma/Asi2025",
-    "commit": "f5ce0b8779654c7cfe665bbaf7d35971e2170e1a"
+    "commit": "ab8a75ccd804d1cacd0c4bf986fe6d956e26a276"
   },
   "email": "sadej.jan1@gmail.com",
   "root": "C:\\Users\\uniaw\\Asi2025",
@@ -19,11 +19,11 @@
   "disk": {
     "/": {
       "total": "511078113280",
-      "used": "356775174144"
+      "used": "356777672704"
     }
   },
   "memory": {
     "total": "17010921472"
   },
-  "writerId": "o8v7rmoyv35hm6aucbrwzx9hj25zgqhe"
+  "writerId": "6o6l6qyuwib94uml36f8sdmbe21q5cuf"
 }

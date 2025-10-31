@@ -1,0 +1,29 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "CPython 3.11.14",
+  "startedAt": "2025-10-29T22:08:18.467371Z",
+  "args": [
+    "run"
+  ],
+  "program": "-m __main__",
+  "git": {
+    "remote": "https://github.com/Dzzzuma/Asi2025",
+    "commit": "4ea206287b266884c7d7a3577396bc7a42a4ca98"
+  },
+  "email": "sadej.jan1@gmail.com",
+  "root": "C:\\Users\\uniaw\\Asi2025",
+  "host": "DESKTOP-5FMQQBC",
+  "executable": "C:\\Users\\uniaw\\anaconda3\\envs\\asi-ml\\python.exe",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "511078113280",
+      "used": "356872130560"
+    }
+  },
+  "memory": {
+    "total": "17010921472"
+  },
+  "writerId": "unio368jjd65vpkd1v79vlr49v465v95"
+}

@@ -1,0 +1,11 @@
+[2;36m[10/29/25 23:00:45][0m[2;36m [0m[33mWARNING [0m C:\Users\uniaw\anaconda3\envs\asi-ml\Lib\site-packages\sklearn\linear_model\_logistic.py ]8;id=978309;file://C:\Users\uniaw\anaconda3\envs\asi-ml\Lib\warnings.py\[2mwarnings.py[0m]8;;\[2m:[0m]8;id=985471;file://C:\Users\uniaw\anaconda3\envs\asi-ml\Lib\warnings.py#110\[2m110[0m]8;;\
+[2;36m                    [0m         :[1;36m473[0m: ConvergenceWarning: lbfgs failed to converge after [1;36m5000[0m [1;35miteration[0m[1m([0ms[1m)[0m [1m([0m[33mstatus[0m=[1;36m1[0m[1m)[0m:   [2m               [0m
+[2;36m                    [0m         STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT                                              [2m               [0m
+[2;36m                    [0m                                                                                                  [2m               [0m
+[2;36m                    [0m         Increase the number of iterations to improve the convergence [1m([0m[33mmax_iter[0m=[1;36m5000[0m[1m)[0m.            [2m               [0m
+[2;36m                    [0m         You might also want to scale the data as shown in:                                       [2m               [0m
+[2;36m                    [0m             [4;94mhttps://scikit-learn.org/stable/modules/preprocessing.html[0m                           [2m               [0m
+[2;36m                    [0m         Please also refer to the documentation for alternative solver options:                   [2m               [0m
+[2;36m                    [0m             [4;94mhttps://scikit-learn.org/stable/modules/linear_model.html#logistic-regression[0m        [2m               [0m
+[2;36m                    [0m           n_iter_i = [1;35m_check_optimize_result[0m[1m([0m                                                     [2m               [0m
+[2;36m                    [0m                                                                                                  [2m               [0m

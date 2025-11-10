@@ -4,6 +4,9 @@ raw_data:
   load_args:
     encoding: utf-8
 
+raw_loaded:
+  type: MemoryDataset
+
 clean_data:
   type: kedro_datasets.pandas.ParquetDataset
   filepath: data/02_interim/clean.parquet
@@ -33,5 +36,15 @@ model_baseline:
 metrics_baseline:
   type: kedro_datasets.json.JSONDataset
   filepath: data/09_tracking/metrics_baseline.json
+  save_args:
+    indent: 2
+
+ag_model:
+  type: kedro_datasets.pickle.PickleDataset
+  filepath: data/06_models/ag_production.pkl
+
+ag_metrics:
+  type: kedro_datasets.json.JSONDataset
+  filepath: data/09_tracking/ag_metrics.json
   save_args:
     indent: 2

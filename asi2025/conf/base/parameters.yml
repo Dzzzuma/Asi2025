@@ -1,13 +1,16 @@
-# ile wierszy wczytać z raw_df
+# ile wierszy wczytać z raw_df (None = wszystko)
 sample_n: null
 
-# kolumna celu + podział
+# kolumna celu
 target_col: "Satisfaction"
-test_size: 0.2
-random_state: 42
 
-# hiperparametry modelu baseline
+split:
+  test_size: 0.2
+  random_state: 42
+  stratify: true
+
 model:
-  max_iter: 2000
+  kind: "logreg"
+  max_iter: 5000
   C: 1.0
   random_state: 42

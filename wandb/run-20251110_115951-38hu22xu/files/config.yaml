@@ -1,0 +1,36 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            qq5dagw6bae0ngqwcc1gmr7z5b4ce4f5:
+                args:
+                    - run
+                email: emiliacywinskaWS@gmail.com
+                executable: /Users/emiliacywinska/miniforge3/envs/asi-ml/bin/python3.11
+                git:
+                    commit: c42ddbc0e2c6d919cefcce18422020829e30076a
+                    remote: https://github.com/Dzzzuma/Asi2025.git
+                host: macbook-air-emilia.home
+                os: macOS-15.6.1-arm64-arm-64bit
+                program: /Users/emiliacywinska/miniforge3/envs/asi-ml/bin/kedro
+                python: CPython 3.11.14
+                root: /Users/emiliacywinska/Desktop/studia/ROK 4/ASI/Asi2025/Asi2025
+                startedAt: "2025-11-10T10:59:51.231381Z"
+                writerId: qq5dagw6bae0ngqwcc1gmr7z5b4ce4f5
+        m: []
+        python_version: 3.11.14
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+            "4": 3.11.14
+            "5": 0.22.2
+            "10":
+                - 20
+            "12": 0.22.2
+            "13": darwin-arm64

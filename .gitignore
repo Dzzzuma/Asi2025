@@ -30,3 +30,9 @@ Thumbs.db
 
 # Kedro local configuration (do not commit!)
 conf/local/*
+
+
+AutogluonModels/
+wandb/
+asi2025/wandb/
+.viz/

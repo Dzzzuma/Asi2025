@@ -1,4 +1,6 @@
-seed: 41
+
+sample_n: null
+
 target_col: "Satisfaction"
 
 split:
@@ -9,3 +11,13 @@ split:
 model:
   kind: "logreg"
   max_iter: 5000
+  C: 1.0
+  random_state: 42
+
+autogluon:
+  time_limit: 120
+  presets: "medium_quality_faster_train"
+  problem_type: "binary"
+  label: "Satisfaction"
+  eval_metric: "roc_auc"
+  seed: 42

@@ -5,6 +5,7 @@ from typing import Any, Dict, Tuple
 
 import joblib
 import pandas as pd
+from autogluon.tabular import TabularPredictor
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
@@ -194,5 +195,63 @@ def evaluate(
     # --- LOGOWANIE METRYK DO W&B ---
     wandb.log(metrics)
     wandb.finish()
+
+    return metrics
+
+
+# 6) TRAIN AUTOGluon
+def train_autogluon(
+    X_train: pd.DataFrame,
+    y_train: pd.DataFrame,
+    params: Dict[str, Any] | None,
+) -> TabularPredictor:
+    """
+    Trenuje model AutoGluon na danych X_train / y_train ze split_data.
+    y_train jest DataFrame z jedną kolumną (target).
+    """
+    params = params or {}
+    label_col = params.get("label", "Satisfaction")
+
+    df_train = X_train.copy()
+    df_train[label_col] = y_train.iloc[:, 0].values
+
+    predictor = TabularPredictor(
+        label=label_col,
+        problem_type=params.get("problem_type"),
+        eval_metric=params.get("eval_metric"),
+    ).fit(
+        train_data=df_train,
+        presets=params.get("presets", "medium_quality_faster_train"),
+        time_limit=int(params.get("time_limit", 120)),
+    )
+
+    return predictor
+
+
+# 7) EVALUATE AUTOGluon
+def evaluate_autogluon(
+    ag_predictor: TabularPredictor,
+    X_test: pd.DataFrame,
+    y_test: pd.DataFrame,
+    params: Dict[str, Any] | None,
+) -> Dict[str, float]:
+    """
+    Ewaluacja modelu AutoGluon na zbiorze testowym.
+    Zwraca słownik z metrykami (float).
+    """
+    params = params or {}
+    label_col = params.get("label", "Satisfaction")
+
+    df_test = X_test.copy()
+    df_test[label_col] = y_test.iloc[:, 0].values
+
+    eval_metrics = ag_predictor.evaluate(df_test, auxiliary_metrics=True)
+
+    metrics: Dict[str, float] = {}
+    for k, v in eval_metrics.items():
+        try:
+            metrics[k] = float(v)
+        except (TypeError, ValueError):
+            continue
 
     return metrics

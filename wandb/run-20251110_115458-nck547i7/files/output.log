@@ -1,0 +1,50 @@
+[2;36m[11/10/25 11:55:00][0m[2;36m [0m[33mWARNING [0m [35m/Users/emiliacy[0m ]8;id=646923;file:///Users/emiliacywinska/miniforge3/envs/asi-ml/lib/python3.11/warnings.py\[2mwarnings.py[0m]8;;\[2m:[0m]8;id=27164;file:///Users/emiliacywinska/miniforge3/envs/asi-ml/lib/python3.11/warnings.py#110\[2m110[0m]8;;\
+[2;36m                    [0m         [35mwinska/miniforg[0m [2m               [0m
+[2;36m                    [0m         [35me3/envs/asi-ml/[0m [2m               [0m
+[2;36m                    [0m         [35mlib/python3.11/[0m [2m               [0m
+[2;36m                    [0m         [35msite-packages/s[0m [2m               [0m
+[2;36m                    [0m         [35mklearn/linear_m[0m [2m               [0m
+[2;36m                    [0m         [35model/[0m[95m_logistic.[0m [2m               [0m
+[2;36m                    [0m         [95mpy[0m:[1;36m473[0m:         [2m               [0m
+[2;36m                    [0m         ConvergenceWarn [2m               [0m
+[2;36m                    [0m         ing: lbfgs      [2m               [0m
+[2;36m                    [0m         failed to       [2m               [0m
+[2;36m                    [0m         converge after  [2m               [0m
+[2;36m                    [0m         [1;36m5000[0m            [2m               [0m
+[2;36m                    [0m         [1;35miteration[0m[1m([0ms[1m)[0m    [2m               [0m
+[2;36m                    [0m         [1m([0m[33mstatus[0m=[1;36m1[0m[1m)[0m:     [2m               [0m
+[2;36m                    [0m         STOP: TOTAL NO. [2m               [0m
+[2;36m                    [0m         OF ITERATIONS   [2m               [0m
+[2;36m                    [0m         REACHED LIMIT   [2m               [0m
+[2;36m                    [0m                         [2m               [0m
+[2;36m                    [0m         Increase the    [2m               [0m
+[2;36m                    [0m         number of       [2m               [0m
+[2;36m                    [0m         iterations to   [2m               [0m
+[2;36m                    [0m         improve the     [2m               [0m
+[2;36m                    [0m         convergence     [2m               [0m
+[2;36m                    [0m         [1m([0m[33mmax_iter[0m=[1;36m5000[0m[1m)[0m [2m               [0m
+[2;36m                    [0m         .               [2m               [0m
+[2;36m                    [0m         You might also  [2m               [0m
+[2;36m                    [0m         want to scale   [2m               [0m
+[2;36m                    [0m         the data as     [2m               [0m
+[2;36m                    [0m         shown in:       [2m               [0m
+[2;36m                    [0m             [4;94mhttps://sci[0m [2m               [0m
+[2;36m                    [0m         [4;94mkit-learn.org/s[0m [2m               [0m
+[2;36m                    [0m         [4;94mtable/modules/p[0m [2m               [0m
+[2;36m                    [0m         [4;94mreprocessing.ht[0m [2m               [0m
+[2;36m                    [0m         [4;94mml[0m              [2m               [0m
+[2;36m                    [0m         Please also     [2m               [0m
+[2;36m                    [0m         refer to the    [2m               [0m
+[2;36m                    [0m         documentation   [2m               [0m
+[2;36m                    [0m         for alternative [2m               [0m
+[2;36m                    [0m         solver options: [2m               [0m
+[2;36m                    [0m             [4;94mhttps://sci[0m [2m               [0m
+[2;36m                    [0m         [4;94mkit-learn.org/s[0m [2m               [0m
+[2;36m                    [0m         [4;94mtable/modules/l[0m [2m               [0m
+[2;36m                    [0m         [4;94minear_model.htm[0m [2m               [0m
+[2;36m                    [0m         [4;94ml#logistic-regr[0m [2m               [0m
+[2;36m                    [0m         [4;94mession[0m          [2m               [0m
+[2;36m                    [0m           n_iter_i =    [2m               [0m
+[2;36m                    [0m         [1;35m_check_optimize[0m [2m               [0m
+[2;36m                    [0m         [1;35m_result[0m[1m([0m        [2m               [0m
+[2;36m                    [0m                         [2m               [0m

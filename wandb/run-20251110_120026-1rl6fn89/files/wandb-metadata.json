@@ -1,0 +1,18 @@
+{
+  "os":  "macOS-15.6.1-arm64-arm-64bit",
+  "python":  "CPython 3.11.14",
+  "startedAt":  "2025-11-10T11:00:26.367946Z",
+  "args":  [
+    "-q"
+  ],
+  "program":  "/Users/emiliacywinska/miniforge3/envs/asi-ml/bin/pytest",
+  "git":  {
+    "remote":  "https://github.com/Dzzzuma/Asi2025.git",
+    "commit":  "c42ddbc0e2c6d919cefcce18422020829e30076a"
+  },
+  "email":  "emiliacywinskaWS@gmail.com",
+  "root":  "/Users/emiliacywinska/Desktop/studia/ROK 4/ASI/Asi2025/Asi2025",
+  "host":  "macbook-air-emilia.home",
+  "executable":  "/Users/emiliacywinska/miniforge3/envs/asi-ml/bin/python",
+  "writerId":  "rj1xi77qbhuckbf9wb63s76uc5vs7r1a"
+}

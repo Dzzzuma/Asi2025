@@ -1,0 +1,39 @@
+{
+  "os":  "macOS-15.6.1-arm64-arm-64bit",
+  "python":  "CPython 3.11.14",
+  "startedAt":  "2025-11-10T10:56:49.433770Z",
+  "args":  [
+    "run",
+    "--from-nodes=train_baseline"
+  ],
+  "program":  "/Users/emiliacywinska/miniforge3/envs/asi-ml/bin/kedro",
+  "git":  {
+    "remote":  "https://github.com/Dzzzuma/Asi2025.git",
+    "commit":  "c42ddbc0e2c6d919cefcce18422020829e30076a"
+  },
+  "email":  "emiliacywinskaWS@gmail.com",
+  "root":  "/Users/emiliacywinska/Desktop/studia/ROK 4/ASI/Asi2025/Asi2025",
+  "host":  "macbook-air-emilia.home",
+  "executable":  "/Users/emiliacywinska/miniforge3/envs/asi-ml/bin/python3.11",
+  "cpu_count":  8,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "494384795648",
+      "used":  "197914419200"
+    }
+  },
+  "memory":  {
+    "total":  "17179869184"
+  },
+  "apple":  {
+    "name":  "Apple M3",
+    "ecpuCores":  4,
+    "pcpuCores":  4,
+    "gpuCores":  10,
+    "memoryGb":  16,
+    "swapTotalBytes":  "9663676416",
+    "ramTotalBytes":  "17179869184"
+  },
+  "writerId":  "n8f67kbsc2sv9ql1gzxfevkc7tcxboka"
+}

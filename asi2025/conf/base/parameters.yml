@@ -14,3 +14,24 @@ model:
   max_iter: 5000
   C: 1.0
   random_state: 42
+
+# -------------------------
+# AutoGluon – parametry eksperymentów (Sprint 3)
+# -------------------------
+autogluon:
+  time_limit: 120                 # czas treningu (sekundy)
+  presets: "medium_quality_faster_train"
+  problem_type: "binary"          # "binary" | "multiclass" | "regression"
+  label: "Satisfaction"
+  eval_metric: "roc_auc"          # np. "roc_auc", "f1", "accuracy", "rmse"
+  random_state: 42
+
+# Ścieżki do artefaktów, używane przez nody (spójne z catalog.yml)
+ag_paths:
+  model_pickle: "data/06_models/ag_production.pkl"
+  metrics_json: "data/09_tracking/ag_metrics.json"
+
+# Konfiguracja W&B (możesz wyłączyć na czas testów)
+wandb:
+  enabled: true            # ustaw false żeby nie logować
+  project: "asi2025"       # nazwa projektu W&B

@@ -22,3 +22,5 @@ dependencies:
       - pyarrow
       - pandera
       - great-expectations
+      - autogluon==1.*
+      - wandb

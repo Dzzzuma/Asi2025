@@ -15,9 +15,11 @@ model:
   random_state: 42
 
 autogluon:
-  time_limit: 120
-  presets: "medium_quality_faster_train"
+  time_limit: 180
+  presets: "good_quality"
   problem_type: "binary"
-  label: "Satisfaction"
+  label: "target"
   eval_metric: "roc_auc"
-  seed: 42
+  random_state: 42
+
+

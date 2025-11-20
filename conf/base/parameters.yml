@@ -21,5 +21,3 @@ autogluon:
   label: "target"
   eval_metric: "roc_auc"
   random_state: 42
-
-

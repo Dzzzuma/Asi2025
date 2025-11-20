@@ -14,7 +14,7 @@ Info o próbce: do repo dodano 500 pierwszych wierszy z pelnego pliku (130k)
 Model baseline i metryki są logowane do [Weights & Biases (W&B)](https://wandb.ai/sadej-jan-polsko-japo-ska-akademia-technik-komputerowych/asi2025).
 
 
-## SPRINT 3 
+## SPRINT 3
 Wybór modelu produkcyjnego (AutoGluon)
 
 Do wyboru modelu „Production” przyjęliśmy następujące kryterium:
@@ -24,7 +24,7 @@ Do wyboru modelu „Production” przyjęliśmy następujące kryterium:
 
 Na podstawie tych kryteriów wybraliśmy run:
 
-- **Production run:** `ag_exp2_good_quality`  
+- **Production run:** `ag_exp2_good_quality`
   (wyższy ROC AUC oraz lepsze accuracy/F1 niż `ag_exp1_fast` i `ag_exp3_high_quality`).
 
   Szczegółowe wyniki (wykresy, pełny config runów) ->

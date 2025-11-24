@@ -3,7 +3,7 @@ raw_airline:
   type: pandas.CSVDataset
   filepath: data/01_raw/airline_passenger_satisfaction_sample.csv
 
-# artefakty pośrednie (
+# artefakty pośrednie
 raw_df:
   type: memory_dataset.MemoryDataset
 clean_df:
@@ -25,7 +25,7 @@ feature_names:
   type: pickle.PickleDataset
   filepath: data/02_interim/feature_names.pkl
 
-# wyjścia
+# wyjścia (Sprint 1–2)
 model_baseline:
   type: pickle.PickleDataset
   filepath: data/03_processed/model_baseline.pkl
@@ -34,10 +34,16 @@ metrics:
   type: json.JSONDataset
   filepath: data/03_processed/metrics.json
 
+# -------------------------
+# Artefakty dla AutoGluon (Sprint 3)
+# -------------------------
+
+# pickle z trenowanym predyktorem (alias "production" ustawisz w W&B)
 ag_model:
   type: pickle.PickleDataset
   filepath: data/06_models/ag_production.pkl
 
+# metryki z ewaluacji AG
 ag_metrics:
-  type: tracking.MetricsDataSet
+  type: json.JSONDataset
   filepath: data/09_tracking/ag_metrics.json

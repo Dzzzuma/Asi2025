@@ -2,7 +2,15 @@ from __future__ import annotations
 
 from kedro.pipeline import Pipeline, node, pipeline
 
-from .nodes import basic_clean, evaluate, load_raw, train_baseline, train_test_split
+from .nodes import (
+    basic_clean,
+    evaluate,
+    evaluate_autogluon,
+    load_raw,
+    train_autogluon,
+    train_baseline,
+    train_test_split,
+)
 
 
 def create_pipeline() -> Pipeline:
@@ -28,8 +36,8 @@ def create_pipeline() -> Pipeline:
                 inputs=dict(
                     df="clean_df",
                     target_col="params:target_col",
-                    test_size="params:test_size",
-                    random_state="params:random_state",
+                    test_size="params:split.test_size",
+                    random_state="params:split.random_state",
                 ),
                 outputs=["X_train", "X_test", "y_train", "y_test", "feature_names"],
                 name="split_node",
@@ -41,12 +49,26 @@ def create_pipeline() -> Pipeline:
                 outputs="model_baseline",
                 name="train_baseline_node",
             ),
-            # 5) evaluate
+            # 5) evaluate baseline
             node(
                 func=evaluate,
                 inputs=["model_baseline", "X_test", "y_test"],
                 outputs="metrics",
                 name="evaluate_node",
+            ),
+            # 6) train AutoGluon
+            node(
+                func=train_autogluon,
+                inputs=["X_train", "y_train", "feature_names", "params:autogluon"],
+                outputs="ag_model",
+                name="train_autogluon_node",
+            ),
+            # 7) evaluate AutoGluon
+            node(
+                func=evaluate_autogluon,
+                inputs=["ag_model", "X_test", "y_test", "feature_names", "params:autogluon"],
+                outputs="ag_metrics",
+                name="evaluate_autogluon_node",
             ),
         ]
     )

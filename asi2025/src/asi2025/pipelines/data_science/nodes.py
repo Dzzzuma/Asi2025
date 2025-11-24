@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
+from autogluon.tabular import TabularPredictor
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
@@ -130,3 +131,56 @@ def evaluate(model, X_test: np.ndarray, y_test: pd.Series) -> dict[str, float]:
     f1 = float(f1_score(y_test_bin, y_pred))
 
     return {"roc_auc": roc_auc, "f1": f1}
+
+
+# 6) trenowanie modelu AutoGluon
+def train_autogluon(
+    X_train: np.ndarray,
+    y_train: pd.Series,
+    feature_names: list[str],
+    params: dict,
+) -> TabularPredictor:
+
+    label_col = params.get("label", "Satisfaction")
+
+    df_train = pd.DataFrame(X_train, columns=feature_names).copy()
+    df_train[label_col] = y_train.values
+
+    predictor = TabularPredictor(
+        label=label_col,
+        problem_type=params.get("problem_type"),
+        eval_metric=params.get("eval_metric"),
+    ).fit(
+        train_data=df_train,
+        presets=params.get("presets", "medium_quality_faster_train"),
+        time_limit=int(params.get("time_limit", 120)),
+        seed=int(params.get("seed", 42)),
+    )
+
+    return predictor
+
+
+# 7) ewaluacja AutoGluon
+def evaluate_autogluon(
+    ag_predictor: TabularPredictor,
+    X_test: np.ndarray,
+    y_test: pd.Series,
+    feature_names: list[str],
+    params: dict,
+) -> dict[str, float]:
+
+    label_col = params.get("label", "Satisfaction")
+
+    df_test = pd.DataFrame(X_test, columns=feature_names).copy()
+    df_test[label_col] = y_test.values
+
+    eval_metrics = ag_predictor.evaluate(df_test, auxiliary_metrics=True)
+
+    metrics: dict[str, float] = {}
+    for k, v in eval_metrics.items():
+        try:
+            metrics[k] = float(v)
+        except (TypeError, ValueError):
+            continue
+
+    return metrics

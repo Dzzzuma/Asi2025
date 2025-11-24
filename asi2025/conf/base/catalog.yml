@@ -33,3 +33,11 @@ model_baseline:
 metrics:
   type: json.JSONDataset
   filepath: data/03_processed/metrics.json
+
+ag_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/ag_production.pkl
+
+ag_metrics:
+  type: tracking.MetricsDataSet
+  filepath: data/09_tracking/ag_metrics.json

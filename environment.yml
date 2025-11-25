@@ -24,3 +24,6 @@ dependencies:
       - great-expectations
       - autogluon==1.*
       - wandb
+      - fastapi
+      - uvicorn
+      - sqlalchemy

@@ -36,3 +36,4 @@ AutogluonModels/
 wandb/
 asi2025/wandb/
 .viz/
+local.db

@@ -1,3 +1,5 @@
+import datetime as dt
+import json
 import os
 from pathlib import Path
 
@@ -5,8 +7,40 @@ import joblib
 import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
+from sqlalchemy import create_engine, text
 
 app = FastAPI(title="ASI2025 Model API")
+
+# --------- BAZA DANYCH DO ZAPISU PREDYKCJI ---------
+engine = create_engine(os.getenv("DATABASE_URL", "sqlite:///local.db"), future=True)
+
+
+def save_prediction(payload: dict, prediction: float | int, model_version: str):
+    with engine.begin() as conn:
+        # tworzymy tabelę jeśli jeszcze jej nie ma
+        conn.execute(
+            text(
+                "CREATE TABLE IF NOT EXISTS predictions ("
+                "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                "ts TEXT, "
+                "payload TEXT, "
+                "prediction REAL, "
+                "model_version TEXT)"
+            )
+        )
+        # zapis jednej predykcji
+        conn.execute(
+            text(
+                "INSERT INTO predictions(ts, payload, prediction, model_version) "
+                "VALUES (:ts, :payload, :pred, :ver)"
+            ),
+            {
+                "ts": dt.datetime.utcnow().isoformat(),
+                "payload": json.dumps(payload),
+                "pred": float(prediction),
+                "ver": model_version,
+            },
+        )
 
 
 # --------- SCHEMAT WEJŚCIA ---------
@@ -65,7 +99,14 @@ def predict(payload: Features):
         print(f"[API] Błąd podczas predykcji: {e}")
         y_pred = 0.0
 
-    # 3. zwrot wyniku
+    # 3. zapis do bazy
+    save_prediction(
+        payload=payload.model_dump(),  # Pydantic -> dict
+        prediction=float(y_pred),
+        model_version=MODEL_VERSION,
+    )
+
+    # 4. zwrot wyniku
     return {
         "prediction": float(y_pred),
         "model_version": MODEL_VERSION,

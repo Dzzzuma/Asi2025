@@ -14,6 +14,7 @@ dist/
 .env
 .env.*
 *.env
+!.env.example
 
 # Data (nie ładujemy pełbych danych, tylko małe próbki danych)
 data/*

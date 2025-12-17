@@ -1,10 +1,11 @@
-import os
 from pathlib import Path
 
 import joblib
 import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
+
+from src.api.settings import settings
 
 app = FastAPI(title="ASI2025 Model API")
 
@@ -22,13 +23,11 @@ class Prediction(BaseModel):
 
 
 # --------- ŁADOWANIE MODELU (OPCJA A – PLIK LOKALNY) ---------
-
 BASE_DIR = Path(__file__).resolve().parents[2]
-
 DEFAULT_MODEL_PATH = BASE_DIR / "data" / "06_models" / "ag_production.pkl"
 
-MODEL_PATH = Path(os.getenv("MODEL_PATH", str(DEFAULT_MODEL_PATH)))
-
+# Zamiast os.getenv(...) bierzemy z Settings (env/.env)
+MODEL_PATH = Path(settings.MODEL_PATH or str(DEFAULT_MODEL_PATH))
 MODEL_VERSION = f"file:{MODEL_PATH.name}"
 
 print(f"[API] Ładuję model z: {MODEL_PATH}")
@@ -54,18 +53,15 @@ def predict(payload: Features):
     2. Wywołanie model.predict(...)
     3. Zwrócenie predykcji + wersji modelu
     """
-    # 1. przygotowanie danych
     row_dict = payload.model_dump()
     X = pd.DataFrame([row_dict])
 
-    # 2. predykcja
     try:
         y_pred = model.predict(X)[0]
     except Exception as e:
         print(f"[API] Błąd podczas predykcji: {e}")
         y_pred = 0.0
 
-    # 3. zwrot wyniku
     return {
         "prediction": float(y_pred),
         "model_version": MODEL_VERSION,

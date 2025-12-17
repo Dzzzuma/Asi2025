@@ -17,3 +17,5 @@ python-dotenv
 
 # Baza danych
 sqlalchemy
+
+pydantic-settings

@@ -37,3 +37,7 @@ AutogluonModels/
 wandb/
 asi2025/wandb/
 .viz/
+# Local demo artifacts
+local.db
+dummy.pkl
+

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import joblib
@@ -8,6 +9,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 from src.api.db import save_prediction
+from src.api.model_loader import ensure_model_downloaded
 from src.api.settings import get_settings
 
 app = FastAPI(title="ASI2025 Model API")
@@ -39,8 +41,18 @@ def get_model_and_version():
 
     if _MODEL is None:
         settings = get_settings()
-        model_path = Path(settings.MODEL_PATH or str(DEFAULT_MODEL_PATH))
-        _MODEL_VERSION = f"file:{model_path.name}"
+
+        model_path = Path(settings.MODEL_PATH or "/app/model/model.pkl")
+
+        if os.getenv("WANDB_ARTIFACT"):
+            print("[API] WANDB_ARTIFACT ustawiony -> pobieram model z W&B...")
+            os.environ["MODEL_PATH"] = str(model_path)
+            ensure_model_downloaded()
+            _MODEL_VERSION = os.getenv("MODEL_VERSION", "production")
+        else:
+            fallback_path = Path(settings.MODEL_PATH or str(DEFAULT_MODEL_PATH))
+            model_path = fallback_path
+            _MODEL_VERSION = f"file:{model_path.name}"
 
         print(f"[API] Ładuję model z: {model_path}")
         _MODEL = joblib.load(model_path)

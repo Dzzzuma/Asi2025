@@ -1,0 +1,21 @@
+ipython>=8.10
+jupyterlab>=3.0
+notebook
+kedro~=1.0.0
+
+# API
+fastapi
+uvicorn
+
+# Model
+joblib
+pandas
+
+# Walidacja i konfiguracja
+pydantic>=2.0
+python-dotenv
+
+# Baza danych
+sqlalchemy
+
+pydantic-settings
